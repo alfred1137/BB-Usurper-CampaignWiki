@@ -1,11 +1,13 @@
 remote_theme: Drassil/git-wiki-theme@master
 # (string) Title of your wiki
-title: "git-wiki-skeleton"
+title: "Usurper's Bane Campaign Wiki"
 # (string) if you've installed your wiki in subfolder, you must change this configuration
 # with your folder name, otherwise leave it empty
-baseurl: "/git-wiki-skeleton"
+baseurl: "/BB-Usurper-CampaignWiki"
+# (string) The url of your site
+url: "https://alfred1137.github.io"
 # (string) Description of your wiki
-description:
+description: "Explore the world of the Usurper's Bane campaign played in Battle Brothers, modded with Legends, Rise of the Usurper (RotU), and Path of the Vatt'ghern (PoV) and more."
 # (boolean) disable edit functionalities (edit/delete/add pages)
 disable_edit: false
 # (boolean) Enable/disable wiki page list in sidebar
@@ -138,7 +140,7 @@ inc_after_meta :
 inc_before_scripts : 
 inc_after_scripts : 
 inc_before_styles : 
-inc_after_styles : 
+inc_after_styles : custom_style.html
 inc_before_header : 
 inc_after_header : 
 inc_before_tail : 
