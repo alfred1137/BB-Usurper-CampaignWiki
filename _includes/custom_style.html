@@ -244,6 +244,15 @@ footer a {
   color: var(--ctp-main-text) !important;
 }
 
+/* Focus indicators */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--ctp-main-blue) !important;
+  outline-offset: 2px !important;
+}
+
 /* Darkmode JS specifics - We disable the built-in inversion */
 .darkmode-layer {
   display: none !important;
