@@ -78,10 +78,17 @@ body.darkmode--activated {
 }
 
 /* Application of colors */
+html {
+  background-color: var(--ctp-main-bg) !important;
+  min-height: 100vh;
+}
+
 body {
   background-color: var(--ctp-main-bg) !important;
   color: var(--ctp-main-text) !important;
   transition: background-color 0.3s, color 0.3s;
+  min-height: 100vh;
+  margin: 0; /* Removing potential default margins */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -98,6 +105,10 @@ a {
 a:hover {
   color: var(--ctp-main-sapphire) !important;
   text-decoration: underline !important;
+}
+
+.wrapper {
+  background-color: var(--ctp-main-bg) !important;
 }
 
 #git-wiki-sidebar {
@@ -167,6 +178,21 @@ table th {
 
 hr {
   background: var(--ctp-main-surface1) !important;
+}
+
+footer {
+  background-color: var(--ctp-main-bg) !important;
+  color: var(--ctp-main-subtext0) !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer * {
+  color: var(--ctp-main-subtext0) !important;
+}
+
+footer a {
+  color: var(--ctp-main-blue) !important;
 }
 
 /* Search engine */
@@ -243,7 +269,7 @@ hr {
   color: var(--ctp-main-blue) !important;
 }
 
-/* Scrollbar (optional but nice) */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
 }
