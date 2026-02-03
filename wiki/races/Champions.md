@@ -3,7 +3,7 @@ title: "Champions"
 layout: git-wiki-default
 ---
 
-![Champions](/assets/images/a0d34e3f-08e6-44ff-9950-d6a82447ecbf.webp)
+![Champions]({{ site.baseurl }}/assets/images/a0d34e3f-08e6-44ff-9950-d6a82447ecbf.webp)
 
 Champions are particularly skilled and experienced individuals of any non-beast faction. They’re guaranteed to carry one Named Item and have significantly increased stats over their brethren. You’ll be able to easily recognize them by their special base and unique name. They are, in a way, minibosses. They challenge you to fight hard to claim what is theirs, and they shake things up, but prevailing against them will always reward you with the Named Item they carry – be it weapon, shield, armor or helmet.
 

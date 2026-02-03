@@ -3,7 +3,7 @@ title: "Human"
 layout: git-wiki-default
 ---
 
-![Human](/assets/images/a0d34ea4-f3d8-4125-b7b1-5c51f820e05a.webp)
+![Human]({{ site.baseurl }}/assets/images/a0d34ea4-f3d8-4125-b7b1-5c51f820e05a.webp)
 
 **Type**: Human
 
@@ -11,7 +11,7 @@ Human Factions and Units, including non-humans appearing with them.
 
 
 
-    Humans are extremely diverse, different factions have wildly varying skills and equipment. They don't resist any status effects. They are the only creatures that can be raised as [[Zombies]](undead).
+    Humans are extremely diverse, different factions have wildly varying skills and equipment. They don't resist any status effects. They are the only creatures that can be raised as [Zombies](Zombies.md)(undead).
 
 
 

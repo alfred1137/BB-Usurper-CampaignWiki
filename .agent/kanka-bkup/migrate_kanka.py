@@ -6,7 +6,7 @@ from pathlib import Path
 from datetime import datetime
 
 # Configuration
-SOURCE_DIR = Path(r"d:\Git\BB-Usurper-CampaignWiki\.gemini\kanka-bkup")
+SOURCE_DIR = Path(r"d:\Git\BB-Usurper-CampaignWiki\.agent\kanka-bkup")
 TARGET_DIR = Path(r"d:\Git\BB-Usurper-CampaignWiki")
 POSTS_DIR = TARGET_DIR / "_posts"
 WIKI_DIR = TARGET_DIR / "wiki"
@@ -25,6 +25,7 @@ ENTITY_TYPES = {
 # Mappings
 id_to_name = {}
 id_to_type = {}
+id_to_rel_path = {} # store relative path from root
 uuid_to_filename = {}
 uuid_to_orig_name = {}
 
@@ -82,10 +83,6 @@ def html_to_md(html):
         href = re.search(r'href="([^"]+)"', match.group(0))
         if href:
             h = href.group(1)
-            # Check if it's an internal Kanka link that should be resolved
-            # Often these look like /w/campaign_id/entities/id or similar
-            # But the user also has [type:id] format which resolve_links handles.
-            # We'll just keep the text for now if it's complex, or convert to wiki link if simple
             return text
         return text
 
@@ -133,7 +130,8 @@ def get_metadata_md(data):
             oid = m.get('organisation_id')
             oname = id_to_name.get(oid, f"Organisation {oid}")
             role = m.get('role', 'Member')
-            lines.append(f"* **{oname}**: {role}")
+            # Memberships will be resolved later in process_entity_content via resolve_links
+            lines.append(f"* [[{oname}]]: {role}")
 
     return "\n".join(lines) + "\n\n" if lines else ""
 
@@ -151,17 +149,52 @@ def write_md_file(target_path, title, content, metadata_md="", image_header=""):
         out.write(metadata_md)
         out.write(content)
 
-def resolve_links(md):
-    # Kanka links: [character:123], [location:456], [journal:789], etc.
-    def replace_link(match):
+def resolve_links(md, current_file_path):
+    def quote_path(path):
+        return path.replace(' ', '%20')
+
+    def replace_kanka_link(match):
         etype = match.group(1)
-        eid = match.group(2)
-        name = id_to_name.get(int(eid))
-        if name:
-            return f"[[{name}]]"
+        eid = int(match.group(2))
+        name = id_to_name.get(eid)
+        target_rel_path = id_to_rel_path.get(eid)
+        
+        if name and target_rel_path:
+            root = TARGET_DIR
+            target_abs = root / target_rel_path
+            current_dir = Path(current_file_path).parent
+            
+            try:
+                rel_link = os.path.relpath(target_abs, current_dir).replace('\\', '/')
+                return f"[{name}]({quote_path(rel_link)})"
+            except ValueError:
+                return f"[{name}]({{{{ site.baseurl }}}}/{quote_path(target_rel_path)})"
+        
         return match.group(0)
 
-    return re.sub(r'\[(character|location|journal|race|organisation|quest|creature):(\d+)\]', replace_link, md)
+    # First handle [type:id]
+    md = re.sub(r'\[(character|location|journal|race|organisation|quest|creature):(\d+)\]', replace_kanka_link, md)
+    
+    # Also handle [[Name]] if we have a name-to-path mapping
+    name_to_path = {name: path for eid, name in id_to_name.items() for path in [id_to_rel_path.get(eid)] if path}
+    
+    def replace_wiki_link(match):
+        name = match.group(1)
+        target_rel_path = name_to_path.get(name)
+        if target_rel_path:
+            root = TARGET_DIR
+            target_abs = root / target_rel_path
+            current_dir = Path(current_file_path).parent
+            try:
+                rel_link = os.path.relpath(target_abs, current_dir).replace('\\', '/')
+                return f"[{name}]({quote_path(rel_link)})"
+            except ValueError:
+                return f"[{name}]({{{{ site.baseurl }}}}/{quote_path(target_rel_path)})"
+        return match.group(0)
+
+    md = re.sub(r'\[\[(.*?)\]\]', replace_wiki_link, md)
+    
+    return md
 
 def build_mappings():
     print("Building mappings...")
@@ -176,23 +209,39 @@ def build_mappings():
                 uuid_to_filename[uuid] = f"{uuid}.{ext}"
                 uuid_to_orig_name[uuid] = data['name']
 
-    # Entity mappings
+    # Pass 1: Name and Type
     for etype, target in ENTITY_TYPES.items():
         edir = SOURCE_DIR / etype
         if not edir.exists(): continue
         for f in edir.glob("*.json"):
             with open(f, 'r', encoding='utf-8') as jf:
                 data = json.load(jf)
-                # Kanka links in entries use the entity_id (entity.id in JSON)
                 eid = data.get('entity', {}).get('id')
                 name = data.get('name')
-                # Some fields like memberships use the type-specific ID
                 type_id = data.get('id')
-                
                 if name:
-                    if eid: id_to_name[int(eid)] = name
+                    if eid: id_to_name[int(eid)] = name; id_to_type[int(eid)] = etype
                     if type_id: id_to_name[int(type_id)] = name
-                    if eid: id_to_type[int(eid)] = etype
+
+    # Pass 2: Path
+    for etype, target in ENTITY_TYPES.items():
+        edir = SOURCE_DIR / etype
+        if not edir.exists(): continue
+        for f in edir.glob("*.json"):
+            with open(f, 'r', encoding='utf-8') as jf:
+                data = json.load(jf)
+                eid = data.get('entity', {}).get('id')
+                type_id = data.get('id')
+                name = data.get('name')
+                if etype == "journals":
+                    created_at = data.get('created_at', '2024-01-01T00:00:00Z')
+                    date_str = created_at.split('T')[0]
+                    slug = slugify(name)
+                    rel_path = f"_posts/{date_str}-{slug}.md"
+                else:
+                    rel_path = f"wiki/{etype}/{clean_filename(name)}.md"
+                if eid: id_to_rel_path[int(eid)] = rel_path
+                if type_id: id_to_rel_path[int(type_id)] = rel_path
 
 def process_entity_content(data, target_base_dir, is_post=False):
     title = data['name']
@@ -206,10 +255,10 @@ def process_entity_content(data, target_base_dir, is_post=False):
     else:
         filename = f"{clean_filename(title)}.md"
     
+    target_full_path = target_base_dir / filename
     content = html_to_md(entry)
-    content = resolve_links(content)
+    content = resolve_links(content, target_full_path)
     
-    # Move images in content
     def fix_img_path(match):
         placeholder = match.group(1)
         uuid = placeholder.replace('placeholder_', '')
@@ -218,14 +267,12 @@ def process_entity_content(data, target_base_dir, is_post=False):
             src = SOURCE_DIR / "gallery" / fname
             dest_dir = ASSETS_DIR / "_posts"
             dest_dir.mkdir(parents=True, exist_ok=True)
-            if src.exists():
-                shutil.copy2(src, dest_dir / fname)
-            return f"![](/assets/_posts/{fname})"
+            if src.exists(): shutil.copy2(src, dest_dir / fname)
+            return f"![]({{{{ site.baseurl }}}}/assets/_posts/{fname})"
         return match.group(0)
 
     content = re.sub(r'!\[.*?\]\(/assets/images/(placeholder_[^)]+)\)', fix_img_path, content)
 
-    # Entity profile image
     image_header = ""
     img_uuid = data.get('entity', {}).get('image_uuid')
     if img_uuid:
@@ -234,28 +281,21 @@ def process_entity_content(data, target_base_dir, is_post=False):
             src = SOURCE_DIR / "gallery" / fname
             dest_dir = ASSETS_DIR / "images"
             dest_dir.mkdir(parents=True, exist_ok=True)
-            if src.exists():
-                shutil.copy2(src, dest_dir / fname)
-            image_header = f"![{title}](/assets/images/{fname})\n\n"
+            if src.exists(): shutil.copy2(src, dest_dir / fname)
+            image_header = f"![{title}]({{{{ site.baseurl }}}}/assets/images/{fname})\n\n"
 
     metadata_md = get_metadata_md(data)
+    metadata_md = resolve_links(metadata_md, target_full_path)
+    write_md_file(target_full_path, title, content, metadata_md, image_header)
     
-    write_md_file(target_base_dir / filename, title, content, metadata_md, image_header)
-    
-    # Process nested posts
     nested_posts = data.get('entity', {}).get('posts', [])
     for p in nested_posts:
         p_created = p.get('created_at', created_at)
-        p_date = p_created.split('T')[0]
-        p_slug = slugify(p['name'])
-        p_filename = f"{p_date}-{p_slug}.md"
-        
-        p_content = html_to_md(p.get('entry', ''))
-        p_content = resolve_links(p_content)
-        # Fix images in nested post too
+        p_date = p_created.split('T')[0]; p_slug = slugify(p['name'])
+        p_full_path = POSTS_DIR / f"{p_date}-{p_slug}.md"
+        p_content = resolve_links(html_to_md(p.get('entry', '')), p_full_path)
         p_content = re.sub(r'!\[.*?\]\(/assets/images/(placeholder_[^)]+)\)', fix_img_path, p_content)
-        
-        write_md_file(POSTS_DIR / p_filename, p['name'], p_content)
+        write_md_file(p_full_path, p['name'], p_content)
 
 def clean_filename(name):
     return re.sub(r'[<>:"/\\|?*]', '_', name)
@@ -264,43 +304,30 @@ def migrate_journals():
     print("Migrating journals...")
     journal_dir = SOURCE_DIR / "journals"
     if not journal_dir.exists(): return
-    
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
-    
     for f in journal_dir.glob("*.json"):
         with open(f, 'r', encoding='utf-8') as jf:
-            data = json.load(jf)
-            process_entity_content(data, POSTS_DIR, is_post=True)
+            process_entity_content(json.load(jf), POSTS_DIR, is_post=True)
 
 def migrate_entities():
     print("Migrating other entities...")
     for etype, target in ENTITY_TYPES.items():
         if etype == "journals": continue
-        
         edir = SOURCE_DIR / etype
         if not edir.exists(): continue
-        
         target_subdir = WIKI_DIR / etype
         target_subdir.mkdir(parents=True, exist_ok=True)
-        
         for f in edir.glob("*.json"):
             with open(f, 'r', encoding='utf-8') as jf:
-                data = json.load(jf)
-                process_entity_content(data, target_subdir, is_post=False)
+                process_entity_content(json.load(jf), target_subdir, is_post=False)
 
 if __name__ == "__main__":
-    print("Cleaning up wiki/ directory for re-organization...")
     if WIKI_DIR.exists():
         for f in WIKI_DIR.rglob("*.md"):
-            if f.name != "example-page.md":
-                f.unlink()
-    
-    # Clean up posts too, except examples
+            if f.name != "example-page.md": f.unlink()
     if POSTS_DIR.exists():
         for f in POSTS_DIR.glob("*.md"):
-            if "example-post" not in f.name:
-                f.unlink()
-
+            if "example-post" not in f.name: f.unlink()
     build_mappings()
     migrate_journals()
     migrate_entities()

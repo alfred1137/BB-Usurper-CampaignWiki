@@ -3,7 +3,7 @@ title: "Orcs"
 layout: git-wiki-default
 ---
 
-![Orcs](/assets/images/a0d34e6e-6524-46fb-9aab-1536b0227fca.webp)
+![Orcs]({{ site.baseurl }}/assets/images/a0d34e6e-6524-46fb-9aab-1536b0227fca.webp)
 
 ## Orcs
 
@@ -19,7 +19,7 @@ Orcs use their brute force to gain advantage: Young and sometimes Berserkers wil
 
 ## Description
 
-Orcs are large, bulky greenskins with great strength and vitality. Their culture revolves around violence and martial prowess, and their society is structured around the strong taking from the weak. Unlike the closely-related Goblins, they are brutes which see little purpose in blacksmithing or agriculture, preferring to raid and pillage to get what they need.
+Orcs are large, bulky greenskins with great strength and vitality. Their culture revolves around violence and martial prowess, and their society is structured around the strong taking from the weak. Unlike the closely-related [Goblins](../../wiki/races/Goblins.md), they are brutes which see little purpose in blacksmithing or agriculture, preferring to raid and pillage to get what they need.
 
 
 

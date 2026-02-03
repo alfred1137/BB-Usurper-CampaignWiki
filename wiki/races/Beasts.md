@@ -3,7 +3,7 @@ title: "Beasts"
 layout: git-wiki-default
 ---
 
-![Beasts](/assets/images/a0d34e1c-a78a-4905-b935-81d0b3a85642.webp)
+![Beasts]({{ site.baseurl }}/assets/images/a0d34e1c-a78a-4905-b935-81d0b3a85642.webp)
 
 # Wild Beasts
 
@@ -58,7 +58,7 @@ Hyenas roam and attack in packs that swarm and often surround their prey, attack
 
 ### Nachzehrer
 
-**Nachzehrers** (German for "eater of remains," literally "after-eater") are a type of enemy in *Battle Brothers*. They count as beasts, but because they feast on corpses, they are often seen in company with the [[Zombies]] or [[Ancient Dead]].
+**Nachzehrers** (German for "eater of remains," literally "after-eater") are a type of enemy in *Battle Brothers*. They count as beasts, but because they feast on corpses, they are often seen in company with the [Zombies](Zombies.md) or [Ancient Dead](Ancient%20Dead.md).
 
 
 The peasantry tells stories of men and women coming back to life after the sin of committing suicide as horribly shaped monstrosities, turned into a Nachzehrer. They’re said to resemble grey-skinned devils that dig up graves with their claws and devour fresh corpses, even devour parts of themselves and their funeral shrouds, and to grow in strength as they do so until they inevitably prey on the living. Others may claim that they are but wild beasts, merely scavengers drawn to fresh graves like seagulls to fishing nets. Whatever their true nature, they bring misery and disease upon any village they bedevil.
