@@ -1,0 +1,258 @@
+<link rel="stylesheet" href="{{ '/assets/css/catppuccin.css' | relative_url }}">
+<style>
+{% assign flavor = site.catppuccin_flavor | default: 'macchiato' %}
+{% if flavor == 'latte' %}
+  {% assign default_flavor = 'latte' %}
+  {% assign alt_flavor = 'macchiato' %}
+{% else %}
+  {% assign default_flavor = 'macchiato' %}
+  {% assign alt_flavor = 'latte' %}
+{% endif %}
+
+/* Default theme: {{ default_flavor | capitalize }} */
+:root {
+  --ctp-main-bg: var(--ctp-{{ default_flavor }}-base);
+  --ctp-main-text: var(--ctp-{{ default_flavor }}-text);
+  --ctp-main-subtext0: var(--ctp-{{ default_flavor }}-subtext0);
+  --ctp-main-subtext1: var(--ctp-{{ default_flavor }}-subtext1);
+  --ctp-main-surface0: var(--ctp-{{ default_flavor }}-surface0);
+  --ctp-main-surface1: var(--ctp-{{ default_flavor }}-surface1);
+  --ctp-main-surface2: var(--ctp-{{ default_flavor }}-surface2);
+  --ctp-main-overlay0: var(--ctp-{{ default_flavor }}-overlay0);
+  --ctp-main-overlay1: var(--ctp-{{ default_flavor }}-overlay1);
+  --ctp-main-overlay2: var(--ctp-{{ default_flavor }}-overlay2);
+  --ctp-main-mantle: var(--ctp-{{ default_flavor }}-mantle);
+  --ctp-main-crust: var(--ctp-{{ default_flavor }}-crust);
+  --ctp-main-blue: var(--ctp-{{ default_flavor }}-blue);
+  --ctp-main-green: var(--ctp-{{ default_flavor }}-green);
+  --ctp-main-yellow: var(--ctp-{{ default_flavor }}-yellow);
+  --ctp-main-red: var(--ctp-{{ default_flavor }}-red);
+  --ctp-main-peach: var(--ctp-{{ default_flavor }}-peach);
+  --ctp-main-mauve: var(--ctp-{{ default_flavor }}-mauve);
+  --ctp-main-pink: var(--ctp-{{ default_flavor }}-pink);
+  --ctp-main-teal: var(--ctp-{{ default_flavor }}-teal);
+  --ctp-main-sky: var(--ctp-{{ default_flavor }}-sky);
+  --ctp-main-sapphire: var(--ctp-{{ default_flavor }}-sapphire);
+  --ctp-main-lavender: var(--ctp-{{ default_flavor }}-lavender);
+  --ctp-main-maroon: var(--ctp-{{ default_flavor }}-maroon);
+  --ctp-main-rosewater: var(--ctp-{{ default_flavor }}-rosewater);
+  {% if default_flavor == 'latte' %}
+  --ctp-selection-bg: rgba(124, 127, 147, 0.3);
+  {% else %}
+  --ctp-selection-bg: rgba(147, 154, 183, 0.3);
+  {% endif %}
+}
+
+/* Alternate theme: {{ alt_flavor | capitalize }} (Activated by darkmode-js) */
+body.darkmode--activated {
+  --ctp-main-bg: var(--ctp-{{ alt_flavor }}-base);
+  --ctp-main-text: var(--ctp-{{ alt_flavor }}-text);
+  --ctp-main-subtext0: var(--ctp-{{ alt_flavor }}-subtext0);
+  --ctp-main-subtext1: var(--ctp-{{ alt_flavor }}-subtext1);
+  --ctp-main-surface0: var(--ctp-{{ alt_flavor }}-surface0);
+  --ctp-main-surface1: var(--ctp-{{ alt_flavor }}-surface1);
+  --ctp-main-surface2: var(--ctp-{{ alt_flavor }}-surface2);
+  --ctp-main-overlay0: var(--ctp-{{ alt_flavor }}-overlay0);
+  --ctp-main-overlay1: var(--ctp-{{ alt_flavor }}-overlay1);
+  --ctp-main-overlay2: var(--ctp-{{ alt_flavor }}-overlay2);
+  --ctp-main-mantle: var(--ctp-{{ alt_flavor }}-mantle);
+  --ctp-main-crust: var(--ctp-{{ alt_flavor }}-crust);
+  --ctp-main-blue: var(--ctp-{{ alt_flavor }}-blue);
+  --ctp-main-green: var(--ctp-{{ alt_flavor }}-green);
+  --ctp-main-yellow: var(--ctp-{{ alt_flavor }}-yellow);
+  --ctp-main-red: var(--ctp-{{ alt_flavor }}-red);
+  --ctp-main-peach: var(--ctp-{{ alt_flavor }}-peach);
+  --ctp-main-mauve: var(--ctp-{{ alt_flavor }}-mauve);
+  --ctp-main-pink: var(--ctp-{{ alt_flavor }}-pink);
+  --ctp-main-teal: var(--ctp-{{ alt_flavor }}-teal);
+  --ctp-main-sky: var(--ctp-{{ alt_flavor }}-sky);
+  --ctp-main-sapphire: var(--ctp-{{ alt_flavor }}-sapphire);
+  --ctp-main-lavender: var(--ctp-{{ alt_flavor }}-lavender);
+  --ctp-main-maroon: var(--ctp-{{ alt_flavor }}-maroon);
+  --ctp-main-rosewater: var(--ctp-{{ alt_flavor }}-rosewater);
+  {% if alt_flavor == 'latte' %}
+  --ctp-selection-bg: rgba(124, 127, 147, 0.3);
+  {% else %}
+  --ctp-selection-bg: rgba(147, 154, 183, 0.3);
+  {% endif %}
+}
+
+/* Application of colors */
+body {
+  background-color: var(--ctp-main-bg) !important;
+  color: var(--ctp-main-text) !important;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ctp-main-text) !important;
+}
+
+h2 { color: var(--ctp-main-subtext1) !important; }
+h3, h4, h5, h6 { color: var(--ctp-main-subtext0) !important; }
+
+a {
+  color: var(--ctp-main-blue) !important;
+}
+
+a:hover {
+  color: var(--ctp-main-sapphire) !important;
+  text-decoration: underline !important;
+}
+
+#git-wiki-sidebar {
+  background-color: var(--ctp-main-mantle) !important;
+  color: var(--ctp-main-text) !important;
+  border-right: 1px solid var(--ctp-main-surface1) !important;
+}
+
+#git-wiki-sidebar h1 {
+  color: var(--ctp-main-text) !important;
+}
+
+#git-wiki-sidebar .git-wiki-downloads {
+  background: var(--ctp-main-surface0) !important;
+  border: 1px solid var(--ctp-main-surface1) !important;
+}
+
+#git-wiki-sidebar .git-wiki-downloads li {
+  border-right: 1px solid var(--ctp-main-surface1) !important;
+}
+
+#git-wiki-sidebar .git-wiki-downloads a {
+  color: var(--ctp-main-overlay1) !important;
+}
+
+#git-wiki-sidebar .git-wiki-downloads a strong {
+  color: var(--ctp-main-text) !important;
+}
+
+.git-wiki-page {
+  background-color: var(--ctp-main-bg) !important;
+}
+
+#git-wiki-content {
+  color: var(--ctp-main-text) !important;
+}
+
+pre {
+  background-color: var(--ctp-main-mantle) !important;
+  border: 1px solid var(--ctp-main-surface1) !important;
+  color: var(--ctp-main-text) !important;
+}
+
+code {
+  background-color: var(--ctp-main-surface0) !important;
+  color: var(--ctp-main-text) !important;
+  padding: 2px 4px !important;
+  border-radius: 4px !important;
+}
+
+blockquote {
+  border-left: 4px solid var(--ctp-main-surface2) !important;
+  color: var(--ctp-main-subtext0) !important;
+  background-color: var(--ctp-main-mantle) !important;
+  padding: 10px 20px !important;
+}
+
+table th, table td {
+  border-bottom: 1px solid var(--ctp-main-surface1) !important;
+  color: var(--ctp-main-text) !important;
+}
+
+table th {
+  background-color: var(--ctp-main-surface0) !important;
+  color: var(--ctp-main-subtext1) !important;
+}
+
+hr {
+  background: var(--ctp-main-surface1) !important;
+}
+
+/* Search engine */
+#search-input {
+  background-color: var(--ctp-main-surface0) !important;
+  color: var(--ctp-main-text) !important;
+  border: 1px solid var(--ctp-main-surface1) !important;
+  padding: 5px 10px !important;
+  border-radius: 4px !important;
+}
+
+#results-container {
+  background-color: var(--ctp-main-surface0) !important;
+  border: 1px solid var(--ctp-main-surface1) !important;
+}
+
+/* Mobile header */
+#git-wiki-mobile-header {
+  background-color: var(--ctp-main-mantle) !important;
+  border-bottom: 1px solid var(--ctp-main-surface1) !important;
+}
+
+#git-wiki-mobile-header a {
+  color: var(--ctp-main-text) !important;
+}
+
+.w3-teal {
+  background-color: var(--ctp-main-surface1) !important;
+  color: var(--ctp-main-text) !important;
+}
+
+/* Rouge Syntax Highlighting */
+.highlight { background-color: var(--ctp-main-mantle) !important; color: var(--ctp-main-text) !important; }
+.highlight .c, .highlight .cm, .highlight .c1, .highlight .cs, .highlight .cd { color: var(--ctp-main-overlay2) !important; font-style: italic; } /* Comments */
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt, .highlight .kv { color: var(--ctp-main-mauve) !important; font-weight: bold; } /* Keywords */
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .sh, .highlight .si, .highlight .sx { color: var(--ctp-main-green) !important; } /* Strings */
+.highlight .m, .highlight .mi, .highlight .mf, .highlight .mh, .highlight .mo, .highlight .il, .highlight .mb, .highlight .mx { color: var(--ctp-main-peach) !important; } /* Numbers */
+.highlight .o, .highlight .ow { color: var(--ctp-main-sky) !important; } /* Operators */
+.highlight .nf, .highlight .nb { color: var(--ctp-main-blue) !important; } /* Functions */
+.highlight .nc, .highlight .no, .highlight .nd, .highlight .nn { color: var(--ctp-main-yellow) !important; } /* Classes */
+.highlight .na, .highlight .py { color: var(--ctp-main-blue) !important; } /* Properties */
+.highlight .nt { color: var(--ctp-main-mauve) !important; } /* Tags */
+.highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi { color: var(--ctp-main-maroon) !important; } /* Variables/Parameters */
+.highlight .err { color: var(--ctp-main-red) !important; background-color: transparent !important; }
+
+/* Selection */
+::selection {
+  background: var(--ctp-selection-bg) !important;
+  color: var(--ctp-main-text) !important;
+}
+
+/* Darkmode JS specifics - We disable the built-in inversion */
+.darkmode-layer {
+  display: none !important;
+}
+.darkmode--activated img, .darkmode--activated .darkmode-ignore {
+  mix-blend-mode: normal !important;
+}
+
+/* Override for tool buttons */
+.tools-element {
+  border-left: 1px solid var(--ctp-main-surface2) !important;
+}
+
+/* TOC styles */
+#git-wiki-toc {
+  background-color: var(--ctp-main-mantle) !important;
+  border: 1px solid var(--ctp-main-surface1) !important;
+}
+#git-wiki-toc a {
+  color: var(--ctp-main-text) !important;
+}
+#git-wiki-toc a:hover {
+  color: var(--ctp-main-blue) !important;
+}
+
+/* Scrollbar (optional but nice) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--ctp-main-crust);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--ctp-main-surface1);
+  border-radius: 6px;
+  border: 3px solid var(--ctp-main-crust);
+}
+</style>
