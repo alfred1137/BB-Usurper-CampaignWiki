@@ -44,7 +44,7 @@
 }
 
 /* Alternate theme: {{ alt_flavor | capitalize }} (Activated by darkmode-js) */
-body.darkmode--activated {
+.darkmode--activated {
   --ctp-main-bg: var(--ctp-{{ alt_flavor }}-base);
   --ctp-main-text: var(--ctp-{{ alt_flavor }}-text);
   --ctp-main-subtext0: var(--ctp-{{ alt_flavor }}-subtext0);
@@ -98,6 +98,10 @@ h1, h2, h3, h4, h5, h6 {
 h2 { color: var(--ctp-main-subtext1) !important; }
 h3, h4, h5, h6 { color: var(--ctp-main-subtext0) !important; }
 
+strong, dt, th {
+  color: var(--ctp-main-text) !important;
+}
+
 a {
   color: var(--ctp-main-blue) !important;
 }
@@ -105,6 +109,14 @@ a {
 a:hover {
   color: var(--ctp-main-sapphire) !important;
   text-decoration: underline !important;
+}
+
+a small {
+  color: var(--ctp-main-subtext1) !important;
+}
+
+a:hover small {
+  color: var(--ctp-main-subtext0) !important;
 }
 
 .wrapper {
