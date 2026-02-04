@@ -1,10 +1,9 @@
 ---
 title: "Session 2: Of Tombs and Tainted Crowns"
 layout: git-wiki-post
+type: Session
 published: false
 ---
-
-**Type**: Session
 
 We marched back to
   [Hammererden]({{ site.baseurl }}/Hammererden) through a landscape that felt increasingly skeletal, the trees clawing

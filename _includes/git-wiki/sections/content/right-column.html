@@ -1,0 +1,32 @@
+<div class="git-wiki-right-column">
+  <div class="actions-container">
+    {% include git-wiki/components/action_btn/page_actions.html %}
+  </div>
+
+  {% if page.date or page.type %}
+  <div class="metadata-box">
+    <span class="metadata-title">Information</span>
+    {% if page.date %}
+    <div class="metadata-item">
+      <span class="metadata-label">Date:</span>
+      <span class="metadata-value">{{ page.date | date: "%-d %B %Y" }}</span>
+    </div>
+    {% endif %}
+    {% if page.type %}
+    <div class="metadata-item">
+      <span class="metadata-label">Type:</span>
+      <span class="metadata-value">{{ page.type }}</span>
+    </div>
+    {% endif %}
+    {% assign author = page.author | default: site.author %}
+    {% if author %}
+    <div class="metadata-item">
+      <span class="metadata-label">Author:</span>
+      <span class="metadata-value">{{ author }}</span>
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  {% include git-wiki/components/toc/toc.html %}
+</div>

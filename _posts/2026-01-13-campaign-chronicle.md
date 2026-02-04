@@ -1,12 +1,11 @@
 ---
 title: "Campaign chronicle"
 layout: git-wiki-post
+type: Story
 published: true
 ---
 
 ![Campaign chronicle]({{ site.baseurl }}/assets/images/a0d351d3-7a92-4e3c-9196-96ca00ba8f06.png)
-
-**Type**: Story
 
 ## Introduction 
 
@@ -42,15 +41,7 @@ published: true
     to end his reign of mutations and undeath.
   
 
-
-
-
-
-
-## 
-  Journals
-
-
+## Journals
 
   Gameplay is organised by sessions. Each session is then documented as a
   journal entry.

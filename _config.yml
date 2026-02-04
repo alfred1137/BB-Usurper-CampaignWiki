@@ -1,5 +1,6 @@
 # (string) Title of your wiki
 title: "Usurper's Bane Campaign Wiki"
+encoding: utf-8
 # (string) if you've installed your wiki in subfolder, you must change this configuration
 # with your folder name, otherwise leave it empty
 baseurl: "/BB-Usurper-CampaignWiki"
@@ -24,7 +25,7 @@ paginate: 5
 paginate_path: "/assets/blog/page:num"
 permalink: /assets/blog/posts/:year/:month/:day/:title:output_ext
 # (boolean) Enable/disable download buttons in sidebar
-show_downloads: true
+show_downloads: false
 # (string) Specify branch rendered by gitpages allowing wiki tool buttons to work
 git_branch: "master"
 # (string) Url of logo image, it can be full, absolute or relative.
@@ -57,6 +58,21 @@ google_cse_token:
 # (string) path of site root. Normally it's must be empty because _config.yml resides in the root of your repository.
 # If you have _config.yml and your site in a subfolder, then change this config accordly
 site_root:
+
+exclude:
+  - .agent
+  - .log
+  - .gitlab-ci.yml
+  - docker-compose.yml
+  - .env-files
+  - scripts
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - vendor
+  - .git
+  - .gitignore
 
 #
 # Jekyll configurations

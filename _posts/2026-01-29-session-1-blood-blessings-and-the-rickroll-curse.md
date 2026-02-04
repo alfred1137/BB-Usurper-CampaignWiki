@@ -1,9 +1,8 @@
 ---
 title: "Session 1: Blood, Blessings, and the Rickroll Curse"
 layout: git-wiki-post
+type: Session
 ---
-
-**Type**: Session
 
 The Abyss is not merely a place; it is a hunger. It moved within my marrow as
   I ([HiYun]({{ site.baseurl }}/HiYun) ) watched

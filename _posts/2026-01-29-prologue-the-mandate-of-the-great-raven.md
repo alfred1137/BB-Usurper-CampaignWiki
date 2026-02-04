@@ -1,10 +1,9 @@
 ---
 title: "Prologue: The Mandate of the Great Raven"
 layout: git-wiki-post
+type: Story
 published: true
 ---
-
-**Type**: Session
 
 I - [HiYun]({{ site.baseurl }}/HiYun)- was once the last son of a minor noble family, destined for a life of
     silent prayer within a distant abbey. That life died the moment I stepped
