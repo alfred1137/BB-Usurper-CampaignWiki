@@ -44,6 +44,13 @@
     const darkmode = new Darkmode(options);
     darkmode.showWidget();
 
+    // Add ARIA label to the darkmode toggle button
+    const toggleBtn = document.querySelector('.darkmode-toggle');
+    if (toggleBtn) {
+      toggleBtn.setAttribute('aria-label', 'Toggle dark mode');
+      toggleBtn.setAttribute('title', 'Toggle dark mode');
+    }
+
     document.body.style.visibility = 'visible';
     document.body.style.opacity = 1;
   }
