@@ -27,6 +27,10 @@ The project has transitioned from a remote Jekyll theme to a locally internalize
     - Updated `scripts/apply_links.py` to automatically fix existing broken links and apply new ones using the new format, while protecting other links from double-nesting.
     - Updated `scripts/scan_links.py` to report potential links in the new format.
   - **Workflow Sync:** Updated `.agent/workflows/scan-wiki-links.md` to document the new linking convention.
+- **Asset Management Fix (2026-02-04):**
+  - **Folder Rename:** Renamed `assets/_posts` to `assets/posts`. In Jekyll, folders starting with an underscore (outside the root) are ignored during build, causing images in blog posts to break.
+  - **Reference Update:** Updated all image links in `_posts` to point to `assets/posts`.
+  - **Convention:** Established that post-specific assets should live in `assets/posts` or `assets/images`, avoiding leading underscores in asset subdirectories.
 - **Fixes:**
   - Removed `darkmode.js` integration to prevent conflicts with the new CSS-based theming.
   - Replaced local font references with Google Fonts (Noto Sans) to avoid missing asset issues.

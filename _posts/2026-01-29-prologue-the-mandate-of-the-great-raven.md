@@ -21,7 +21,7 @@ I - [HiYun]({{ site.baseurl }}/HiYun)- was once the last son of a minor noble fa
 
 
 
-  ![]({{ site.baseurl }}/assets/_posts/a0f6dbdd-eb43-4678-bb3d-4d275f6558e1.png)
+  ![]({{ site.baseurl }}/assets/posts/a0f6dbdd-eb43-4678-bb3d-4d275f6558e1.png)
 
 
 
@@ -40,7 +40,7 @@ I - [HiYun]({{ site.baseurl }}/HiYun)- was once the last son of a minor noble fa
 
 
 
-  ![]({{ site.baseurl }}/assets/_posts/a0f6dc3f-8182-4940-9e62-d03a8baed4ce.png)
+  ![]({{ site.baseurl }}/assets/posts/a0f6dc3f-8182-4940-9e62-d03a8baed4ce.png)
 
 
 
@@ -72,7 +72,7 @@ I - [HiYun]({{ site.baseurl }}/HiYun)- was once the last son of a minor noble fa
 
 
 
-  ![]({{ site.baseurl }}/assets/_posts/a0f6dc74-5394-4d35-9ce9-468b67215d42.png)
+  ![]({{ site.baseurl }}/assets/posts/a0f6dc74-5394-4d35-9ce9-468b67215d42.png)
 
 
 
@@ -87,7 +87,7 @@ I - [HiYun]({{ site.baseurl }}/HiYun)- was once the last son of a minor noble fa
 
 
 
-  ![]({{ site.baseurl }}/assets/_posts/a0f6dcc7-6456-49a0-91d3-b1d5250af03b.png)
+  ![]({{ site.baseurl }}/assets/posts/a0f6dcc7-6456-49a0-91d3-b1d5250af03b.png)
 
 
 

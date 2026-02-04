@@ -64,7 +64,7 @@ The Abyss is not merely a place; it is a hunger. It moved within my marrow as
   mundane souls and felt the Raven stir. With a flick of my fingers, I bestowed
   the Raven’s Blessing upon two of them.
 
-![]({{ site.baseurl }}/assets/_posts/a0f6e077-7074-4721-9b65-dafde2cb00d2.jpg)
+![]({{ site.baseurl }}/assets/posts/a0f6e077-7074-4721-9b65-dafde2cb00d2.jpg)
 
 
 
@@ -102,7 +102,7 @@ The Abyss is not merely a place; it is a hunger. It moved within my marrow as
   his time pouncing on birds while brigands made off with his "enchanted"
   dagger.
 
-![]({{ site.baseurl }}/assets/_posts/a0f6e0be-14ca-4252-a973-24209b25086c.jpg)
+![]({{ site.baseurl }}/assets/posts/a0f6e0be-14ca-4252-a973-24209b25086c.jpg)
 
 
 
@@ -158,7 +158,7 @@ We have been rickrolled. I nearly executed the fisherman who began to tap his fo
 
 
 
-  ![]({{ site.baseurl }}/assets/_posts/a0f1291b-73ec-436f-bc3c-c7103166dd3b.png)
+  ![]({{ site.baseurl }}/assets/posts/a0f1291b-73ec-436f-bc3c-c7103166dd3b.png)
 
 
 
@@ -222,7 +222,7 @@ We have been rickrolled. I nearly executed the fisherman who began to tap his fo
   phial in his trembling hand: an Unhold’s Heart, still pulsing with a faint,
   regenerative rhythm.
 
-![]({{ site.baseurl }}/assets/_posts/a0f6e1a8-9ce8-434a-a71c-9dcf519c531f.jpg)
+![]({{ site.baseurl }}/assets/posts/a0f6e1a8-9ce8-434a-a71c-9dcf519c531f.jpg)
 
 
 
@@ -287,7 +287,7 @@ We have been rickrolled. I nearly executed the fisherman who began to tap his fo
   nest against her chest. This was no bandit raid; it was a primal, unnatural
   surge.
 
-![]({{ site.baseurl }}/assets/_posts/a0f6e2d6-baaf-4e53-8282-a7f08e13fae1.jpg)
+![]({{ site.baseurl }}/assets/posts/a0f6e2d6-baaf-4e53-8282-a7f08e13fae1.jpg)
 
 
 
