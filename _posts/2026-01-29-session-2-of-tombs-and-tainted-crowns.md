@@ -1,6 +1,7 @@
 ---
 title: "Session 2: Of Tombs and Tainted Crowns"
 layout: git-wiki-post
+published: false
 ---
 
 **Type**: Session

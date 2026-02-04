@@ -1,6 +1,7 @@
 ---
 title: "Prologue: The Mandate of the Great Raven"
 layout: git-wiki-post
+published: true
 ---
 
 **Type**: Session
