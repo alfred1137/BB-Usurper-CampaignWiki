@@ -8,6 +8,11 @@ The project has transitioned from a remote Jekyll theme to a locally internalize
 - **Catppuccin Integration:**
   - Created `_sass/_catppuccin.scss` with CSS variables.
   - Modified `_sass/git-wiki-style.scss` to import Catppuccin variables and map them to theme elements (defaulting to Macchiato flavor).
+- **Theme Refinement:**
+  - Enforced strict usage of **Latte (Light)** and **Macchiato (Dark)** themes only.
+  - Removed unused Frappe and Mocha definitions from `_sass/_catppuccin.scss` to reduce size.
+  - Removed redundant `assets/css/catppuccin.css` file.
+  - Centralized theme switching logic in `_includes/custom_style.html`.
 - **Fixes:**
   - Removed `darkmode.js` integration to prevent conflicts with the new CSS-based theming.
   - Replaced local font references with Google Fonts (Noto Sans) to avoid missing asset issues.

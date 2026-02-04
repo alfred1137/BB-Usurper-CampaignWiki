@@ -9,10 +9,12 @@
 - Assets are organized and linked correctly in the content.
 - Internal wiki links are resolved to standard Markdown links ([Name](../path/to/Name.md)).
 - Automated internal link maintenance via `/scan-wiki-links` workflow.
+- **Visual Style:** Catppuccin theme (Latte/Macchiato) fully integrated and enforced.
 
 ## What's Left to Build
 
-- The visual style and branding (Catppuccin theme) may need further refining.
+- User verification of the new visual style.
+- Continued content updates.
 
 ## Known Issues
 

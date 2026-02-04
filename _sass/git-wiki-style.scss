@@ -4,19 +4,19 @@
 @import "w3.scss";
 
 :root {
-  --bg-color: var(--ctp-macchiato-base);
-  --text-color: var(--ctp-macchiato-text);
-  --link-color: var(--ctp-macchiato-blue);
-  --link-hover-color: var(--ctp-macchiato-sapphire);
-  --sidebar-bg: var(--ctp-macchiato-mantle);
-  --sidebar-border: var(--ctp-macchiato-surface0);
-  --code-bg: var(--ctp-macchiato-surface0);
-  --border-color: var(--ctp-macchiato-surface1);
-  --header-color: var(--ctp-macchiato-text);
-  --quote-color: var(--ctp-macchiato-overlay0);
-  --table-border: var(--ctp-macchiato-surface1);
-  --table-stripe: var(--ctp-macchiato-surface0);
-  --meta-color: var(--ctp-macchiato-subtext0);
+  --bg-color: var(--ctp-main-bg);
+  --text-color: var(--ctp-main-text);
+  --link-color: var(--ctp-main-blue);
+  --link-hover-color: var(--ctp-main-sapphire);
+  --sidebar-bg: var(--ctp-main-mantle);
+  --sidebar-border: var(--ctp-main-surface0);
+  --code-bg: var(--ctp-main-surface0);
+  --border-color: var(--ctp-main-surface1);
+  --header-color: var(--ctp-main-text);
+  --quote-color: var(--ctp-main-overlay0);
+  --table-border: var(--ctp-main-surface1);
+  --table-stripe: var(--ctp-main-surface0);
+  --meta-color: var(--ctp-main-subtext0);
 }
 
 body {
