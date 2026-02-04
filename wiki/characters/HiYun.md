@@ -7,8 +7,8 @@ layout: git-wiki-default
 
 **Type**: Player character
 **Sex**: Male
-**Title**: the Abyssal [Mage](../../wiki/races/Mage.md)
+**Title**: the Abyssal [Mage]({{ site.baseurl }}/Mage)
 
 ### Memberships
-* [The Usurper's Bane](../organisations/The%20Usurper's%20Bane.md): Leader
+* [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane): Leader
 

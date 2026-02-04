@@ -20,6 +20,13 @@ The project has transitioned from a remote Jekyll theme to a locally internalize
   - **Table of Contents:** Redesigned as a clear, standalone container with a distinct header and improved list styling.
   - **Headings & Body:** Significantly increased font sizes and weights for H1 and H2. Improved body text readability by increasing base font size to 16px and line height to 1.7.
   - **Footer:** Left-aligned footer text to match the main content alignment and added a top border for separation.
+- **Link Management Overhaul (2026-02-04):**
+  - **Broken Link Fix:** Resolved a major issue where filesystem-relative links (e.g., `../wiki/path/to/Entity.md`) were breaking due to Jekyll's permalink structure.
+  - **New Linking Strategy:** Transitioned to a robust Jekyll-compatible format: `[Name]({{ site.baseurl }}/Basename)`. This format works consistently across all pages, regardless of their directory depth.
+  - **Script Updates:** 
+    - Updated `scripts/apply_links.py` to automatically fix existing broken links and apply new ones using the new format, while protecting other links from double-nesting.
+    - Updated `scripts/scan_links.py` to report potential links in the new format.
+  - **Workflow Sync:** Updated `.agent/workflows/scan-wiki-links.md` to document the new linking convention.
 - **Fixes:**
   - Removed `darkmode.js` integration to prevent conflicts with the new CSS-based theming.
   - Replaced local font references with Google Fonts (Noto Sans) to avoid missing asset issues.

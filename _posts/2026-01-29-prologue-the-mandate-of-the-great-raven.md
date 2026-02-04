@@ -6,7 +6,7 @@ published: true
 
 **Type**: Session
 
-I - [HiYun](../wiki/characters/HiYun.md)- was once the last son of a minor noble family, destined for a life of
+I - [HiYun]({{ site.baseurl }}/HiYun)- was once the last son of a minor noble family, destined for a life of
     silent prayer within a distant abbey. That life died the moment I stepped
     into my grandfather’s secret library and laid hands upon the Raven Tome, a forbidden text that exerted a pull far stronger than any pious
     scripture.
@@ -16,7 +16,7 @@ I - [HiYun](../wiki/characters/HiYun.md)- was once the last son of a minor noble
 
   For thirty years, I hunted shadows until a drunken tip
     regarding "The Ravens Call" led me to a hidden crypt with five hired men and my long-time
-    companion, [NeCola](../wiki/characters/NeCola.md).
+    companion, [NeCola]({{ site.baseurl }}/NeCola).
 
 
 
@@ -35,7 +35,7 @@ I - [HiYun](../wiki/characters/HiYun.md)- was once the last son of a minor noble
 
 
 
-  I awoke under a full moon, no longer a scholar, but the "Chosen" of The [Changer](../wiki/characters/Changer.md) (the Great Raven)—a god of chaos.
+  I awoke under a full moon, no longer a scholar, but the "Chosen" of The [Changer]({{ site.baseurl }}/Changer) (the Great Raven)—a god of chaos.
 
 
 
@@ -51,21 +51,21 @@ I - [HiYun](../wiki/characters/HiYun.md)- was once the last son of a minor noble
 
 
 
-  I must find the [The Usurper King](../wiki/characters/The%20Usurper%20King.md), a rogue demon lord who has
-  betrayed the god of death, [Davkul](../wiki/characters/Davkul.md), and is currently mutating the land with a "Chaos Plague".
+  I must find the [The Usurper King]({{ site.baseurl }}/The%20Usurper%20King), a rogue demon lord who has
+  betrayed the god of death, [Davkul]({{ site.baseurl }}/Davkul), and is currently mutating the land with a "Chaos Plague".
 
 
 
 
-  This world is gritty. [Human](../wiki/races/Human.md) life is cheap and magic is a rare, terrifying
+  This world is gritty. [Human]({{ site.baseurl }}/Human) life is cheap and magic is a rare, terrifying
   force. To navigate this "Tainted World," I am not alone.
-  [NeCola](../wiki/characters/NeCola.md) was spared from the ritual due to our deep connection with each other.
+  [NeCola]({{ site.baseurl }}/NeCola) was spared from the ritual due to our deep connection with each other.
 
 
 
 
-  She has chosen to undergo a horrific, Abyssal-stained [Trial of the Grasses](../wiki/quests/Trial%20of%20the%20Grasses.md) to become a
-  [Vatt'ghern](../wiki/races/Vatt'ghern.md)
+  She has chosen to undergo a horrific, Abyssal-stained [Trial of the Grasses]({{ site.baseurl }}/Trial%20of%20the%20Grasses) to become a
+  [Vatt'ghern]({{ site.baseurl }}/Vatt%27ghern)
   (Witcher). She is my "Silver Sword," a moral fail-safe designed to slay me
   should my growing chaotic power eventually erode my conscience.
 

@@ -19,7 +19,11 @@ This workflow helps identify mentions of wiki entities (characters, locations, e
    - Proper names that should be linked.
    - False positives (common words that happen to match entity names).
    - Occurrences that are already part of a link but weren't caught by the script's simple regex.
-4. **Apply Links**: For each valid match, replace the plain text with a Markdown relative link.
-   - Format: `[Name](../wiki/path/To/Entity.md)`
-   - Ensure the path is correct relative to the file being edited.
+4. **Apply Links**: For each valid match, replace the plain text with a Jekyll-compatible link.
+   - Format: `[Name]({{ site.baseurl }}/Basename)`
+   - *Note*: Use the entity's filename (without `.md`) as the Basename.
 5. **Verify**: Use Jekyll's local preview (if available) to ensure the links work correctly.
+6. **Automated Application**: Alternatively, run the application script to fix existing links and apply new ones automatically:
+   ```bash
+   python scripts/apply_links.py
+   ```

@@ -6,11 +6,11 @@ layout: git-wiki-post
 **Type**: Session
 
 The Abyss is not merely a place; it is a hunger. It moved within my marrow as
-  I ([HiYun](../wiki/characters/HiYun.md) ) watched
-  [NeCola](../wiki/characters/NeCola.md)
+  I ([HiYun]({{ site.baseurl }}/HiYun) ) watched
+  [NeCola]({{ site.baseurl }}/NeCola)
   convulse upon the frost-nipped grass outside the village of
-  [Stohl](../wiki/locations/Stohl.md).
-  [Trial of the Grasses](../wiki/quests/Trial%20of%20the%20Grasses.md) had not been kind.
+  [Stohl]({{ site.baseurl }}/Stohl).
+  [Trial of the Grasses]({{ site.baseurl }}/Trial%20of%20the%20Grasses) had not been kind.
 
 
 
@@ -23,7 +23,7 @@ The Abyss is not merely a place; it is a hunger. It moved within my marrow as
 
 
   She had chosen this path to become a
-  [Vatt'ghern](../wiki/races/Vatt'ghern.md), a silver sword meant to kill the monster I might become. But for now, she
+  [Vatt'ghern]({{ site.baseurl }}/Vatt%27ghern), a silver sword meant to kill the monster I might become. But for now, she
   was a liability, a flickering flame in a world of encroaching shadows. She is
   extremely weak from the horrific transformation.
 
@@ -37,19 +37,19 @@ The Abyss is not merely a place; it is a hunger. It moved within my marrow as
 
 
   The mission the Great Raven—the
-  [Changer](../wiki/characters/Changer.md)—had bestowed upon me was absolute: find the
-  [The Usurper King](../wiki/characters/The%20Usurper%20King.md), that demon lord who mimics godhood, and determine if he serves the Void or
+  [Changer]({{ site.baseurl }}/Changer)—had bestowed upon me was absolute: find the
+  [The Usurper King]({{ site.baseurl }}/The%20Usurper%20King), that demon lord who mimics godhood, and determine if he serves the Void or
   the flaccid god of death. To reach a king, one needs more than a sick guardian
   and a mage with rotting face. At least, we need a wall of meat.
 
 
 
 
-## The Mark of the [Changer](../wiki/characters/Changer.md)
+## The Mark of the [Changer]({{ site.baseurl }}/Changer)
 
 
 
-  [Stohl](../wiki/locations/Stohl.md)
+  [Stohl]({{ site.baseurl }}/Stohl)
   smelled of old fish and failed ambitions. I found them in the town square:
   three fishermen, their hands calloused by salt-worn ropes and their eyes
   vacant with the aimless despair of the poor.
@@ -58,8 +58,8 @@ The Abyss is not merely a place; it is a hunger. It moved within my marrow as
 
 
   For six hundred crowns,
-  [Arnulf](../wiki/characters/Arnulf.md), [Bardol](../wiki/characters/Bardol.md) and
-  [Ingald](../wiki/characters/Ingald.md)
+  [Arnulf]({{ site.baseurl }}/Arnulf), [Bardol]({{ site.baseurl }}/Bardol) and
+  [Ingald]({{ site.baseurl }}/Ingald)
   agreed to put down their fishing nets for an adventure. I looked into their
   mundane souls and felt the Raven stir. With a flick of my fingers, I bestowed
   the Raven’s Blessing upon two of them.
@@ -82,7 +82,7 @@ The Abyss is not merely a place; it is a hunger. It moved within my marrow as
 
   Why do they follow so easily? I wondered as we walk across town. Do they not
   smell the ozone and grave-dust that clings to my robes? They are but
-  [fodders](../wiki/races/fodders.md)
+  [fodders]({{ site.baseurl }}/fodders)
   in the tide of my ascension. If they die, their souls will fuel my reach; if
   they live, they are merely tools that haven't broken yet. 
 
@@ -111,7 +111,7 @@ The Abyss is not merely a place; it is a hunger. It moved within my marrow as
 
 
   We tracked the thieves to a clearing to the west.
-  [NeCola](../wiki/characters/NeCola.md) remained by the wagons, her lungs still burning with alchemical fire. I
+  [NeCola]({{ site.baseurl }}/NeCola) remained by the wagons, her lungs still burning with alchemical fire. I
   led the "fish-fodder" forward. The brigands laughed when they saw us—a
   green-skinned freak and three peasants smelling of brine.
 
@@ -120,7 +120,7 @@ The Abyss is not merely a place; it is a hunger. It moved within my marrow as
 
 
   The combat was a symphony of chaos.
-  [Ingald](../wiki/characters/Ingald.md), his knuckles white upon a rusted pitchfork, stumbled in the mud—a pathetic
+  [Ingald]({{ site.baseurl }}/Ingald), his knuckles white upon a rusted pitchfork, stumbled in the mud—a pathetic
   display of mortal clumsiness. Yet, as the brigand leader lunged with the
   stolen dagger, the Raven’s Blessing held. He didn't just survive; he moved
   with a sudden, supernatural clarity. His knife found the gap in the raider’s
@@ -131,7 +131,7 @@ The Abyss is not merely a place; it is a hunger. It moved within my marrow as
 
   I watched from the rear, my fingers tracing the air as Abyssal energies coiled
   around my staff like hungry vipers. The void provided. The brigands were
-  either gutted by our band of [fodders](../wiki/races/fodders.md), or evaporated by my spell twisted shock*, and the "enchanted" dagger was ours.
+  either gutted by our band of [fodders]({{ site.baseurl }}/fodders), or evaporated by my spell twisted shock*, and the "enchanted" dagger was ours.
 
 
 
@@ -181,15 +181,15 @@ We have been rickrolled. I nearly executed the fisherman who began to tap his fo
 
   Having returned the dagger swiftly to our employer, he was satisfied. He
   offered us another job to deliver a mysterious chest to a noble named Eike in
-  the town of[Thal](../wiki/locations/Thal.md). I agreed to take to quest.
+  the town of[Thal]({{ site.baseurl }}/Thal). I agreed to take to quest.
 
 
 
 
 
-  We marched east, first stopping by [Hammererden](../wiki/locations/Hammererden.md). The air growing thick with coal smoke and the metallic tang of hot
+  We marched east, first stopping by [Hammererden]({{ site.baseurl }}/Hammererden). The air growing thick with coal smoke and the metallic tang of hot
   iron. The road was a grueling slog;
-  [Arnulf](../wiki/characters/Arnulf.md) was already showing the weariness of a soul tethered to a dark master.
+  [Arnulf]({{ site.baseurl }}/Arnulf) was already showing the weariness of a soul tethered to a dark master.
 
 
 
@@ -211,7 +211,7 @@ We have been rickrolled. I nearly executed the fisherman who began to tap his fo
 
   I did not hesitate. The path to the Usurper requires components that cannot be
   pried from common merchants. We cut straws, but the Abyss already knew its
-  victim. [Bardol](../wiki/characters/Bardol.md) drew the short one. I watched with a cold, detached curiosity
+  victim. [Bardol]({{ site.baseurl }}/Bardol) drew the short one. I watched with a cold, detached curiosity
   as he was strapped to an iron-framed table.
 
 
@@ -233,7 +233,7 @@ We have been rickrolled. I nearly executed the fisherman who began to tap his fo
   I can feel their resentment simmering beneath the surface, I mused, watching
   the other fishermen eye me with newfound terror. They realize now that they
   are not my brothers, but my reagents. Let them fear. Fear is a far more
-  reliable tether than gold. [Bardol](../wiki/characters/Bardol.md)’s agony is the price of our progress. If I
+  reliable tether than gold. [Bardol]({{ site.baseurl }}/Bardol)’s agony is the price of our progress. If I
   am to unseat a god-king, I cannot afford the luxury of a conscience.
 
 
@@ -242,25 +242,25 @@ We have been rickrolled. I nearly executed the fisherman who began to tap his fo
 
 
   We camped outside of town to rest up. Although I need no such thing called
-  rest*, my [fodders](../wiki/races/fodders.md) need to be in shape to be effective meat shield. While
+  rest*, my [fodders]({{ site.baseurl }}/fodders) need to be in shape to be effective meat shield. While
   they enjoy the weight of the few crows for their first day of service, I spent
   the night tending to the illness of
-  [NeCola](../wiki/characters/NeCola.md).
+  [NeCola]({{ site.baseurl }}/NeCola).
 
 
 
 
 
   By Day 2, the mutation had finally taken its full hold of
-  [NeCola](../wiki/characters/NeCola.md). She emerged from her fever no longer an ordinary shield maiden, but a
-  [Vatt'ghern](../wiki/races/Vatt'ghern.md). Her eyes were yellow, slitted like a cat’s. Although still ill, she began
+  [NeCola]({{ site.baseurl }}/NeCola). She emerged from her fever no longer an ordinary shield maiden, but a
+  [Vatt'ghern]({{ site.baseurl }}/Vatt%27ghern). Her eyes were yellow, slitted like a cat’s. Although still ill, she began
   to move with a predatory grace that silenced even the ravens. 
 
 
 
 
 
-  We walked towards the next town along the road, [Thal](../wiki/locations/Thal.md). On the way there, we chanced upon a few nomads moving to jump on a Southern
+  We walked towards the next town along the road, [Thal]({{ site.baseurl }}/Thal). On the way there, we chanced upon a few nomads moving to jump on a Southern
   caravan. I ordered the charge. We left the sands red and the Southerners
   in our debt.
 
@@ -270,7 +270,7 @@ We have been rickrolled. I nearly executed the fisherman who began to tap his fo
 
 
 
-  We reached [Thal](../wiki/locations/Thal.md) at midday, delivering the chest to the local noble Eike. He
+  We reached [Thal]({{ site.baseurl }}/Thal) at midday, delivering the chest to the local noble Eike. He
   treated us with the disdain of a man who hasn't yet realized the world is
   ending. But it was the next contract that revealed the true rot. Another local
   noble named Frank complained of "unruly vagabonds" destroying his wheat
@@ -283,7 +283,7 @@ We have been rickrolled. I nearly executed the fisherman who began to tap his fo
   When we arrived, there were no men. There was only a manifestation of runaway
   life. Vines painted the buildings in a verdant crawl; grass grew in the pig
   pens; and in the cemetery, blue birds bathed in open graves where the dead had
-  been displaced by the rising earth. [NeCola](../wiki/characters/NeCola.md)'s medallion hummed like a hornet’s
+  been displaced by the rising earth. [NeCola]({{ site.baseurl }}/NeCola)'s medallion hummed like a hornet’s
   nest against her chest. This was no bandit raid; it was a primal, unnatural
   surge.
 
@@ -298,7 +298,7 @@ We have been rickrolled. I nearly executed the fisherman who began to tap his fo
   *The earth itself is restless,* I thought as I watched a vine slowly
   crush the stone of a farmhouse.
   *Is this the Usurper’s work, or is the world simply reacting to the
-    [Changer](../wiki/characters/Changer.md)’s arrival? Frank wants his wheat, but he is blind to the fact that
+    [Changer]({{ site.baseurl }}/Changer)’s arrival? Frank wants his wheat, but he is blind to the fact that
     the soil no longer belongs to him. We will take his crowns and leave him to
     his vines. There are larger graves to dig.*
 
@@ -314,7 +314,7 @@ We have been rickrolled. I nearly executed the fisherman who began to tap his fo
 
 
   As Day 2 drew to a close, we sat by the fire, the Unhold’s Heart thumping in
-  my pack and the gold clinking in my purse. [NeCola](../wiki/characters/NeCola.md) sat awake, her yellow eyes
+  my pack and the gold clinking in my purse. [NeCola]({{ site.baseurl }}/NeCola) sat awake, her yellow eyes
   tracking the darkness. We have survived the brine and the blood of our first
   days, but the Usurper's shadow is lengthening. And the Raven is always hungry.
 

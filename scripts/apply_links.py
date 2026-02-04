@@ -38,76 +38,75 @@ def apply_links():
         original_content = content
         current_entity_name = file_path.stem
         
-        # We'll use a placeholder system to avoid double-linking or linking inside existing links
-        # 1. Find all existing links and replace them with placeholders
         link_placeholders = {}
-        def link_replacer(match):
-            placeholder = f"__LINK_PLACEHOLDER_{len(link_placeholders)}__"
-            link_placeholders[placeholder] = match.group(0)
-            return placeholder
         
-        # Match [text](url)
-        content = re.sub(r'\[[^\]]+\]\([^\)]+\)', link_replacer, content)
-        # Match [text] (reference link) - optionally
-        # content = re.sub(r'\[[^\]]+\]', link_replacer, content)
+        def protect_link(link_str):
+            placeholder = f"__LINK_PLACEHOLDER_{len(link_placeholders)}__"
+            link_placeholders[placeholder] = link_str
+            return placeholder
+
+        # 1. Identify and fix/protect existing links
+        # Regex for [text](url) or ![alt](url)
+        fixed_links_in_file = 0
+        def link_handler(match):
+            nonlocal fixed_links_in_file
+            full_match = match.group(0)
+            prefix_bracket = match.group(1) # '[' or '!['
+            link_text = match.group(2)
+            link_url = match.group(4)
+            
+            # If it's a wiki link (ends in .md), fix it
+            if not prefix_bracket.startswith("!") and (".md" in link_url):
+                # Extract the basename from the URL
+                # We need to unquote it first to handle encoded spaces
+                unquoted_url = urllib.parse.unquote(link_url)
+                target_name = Path(unquoted_url).stem
+                
+                if target_name in entities:
+                    encoded_name = urllib.parse.quote(target_name).replace("%2F", "/")
+                    new_link = f"[{link_text}]({{{{ site.baseurl }}}}/{encoded_name})"
+                    if new_link != full_match:
+                        fixed_links_in_file += 1
+                        return protect_link(new_link)
+            
+            return protect_link(full_match)
+
+        # Regex: (!?\[)([^\]]*)(\]\()([^\)]+)(\))
+        content = re.sub(r'(!?\[)([^\]]*)(\]\()([^\)]+)(\))', link_handler, content)
 
         replacements_in_file = 0
         
+        # 2. Apply new links to remaining text
         for name in sorted_names:
             if name == current_entity_name and "wiki" in file_path.parts:
                 continue
             
             if len(name) < 3: continue
             
-            # Determine relative path to the entity
-            target_path = entities[name]
-            depth = len(file_path.parent.parts)
-            rel_prefix = "../" * depth
-            full_rel_path = rel_prefix + target_path
-            
-            # URL encode spaces and special characters
-            encoded_rel_path = urllib.parse.quote(full_rel_path)
-            encoded_rel_path = encoded_rel_path.replace("%2E%2E/%2E%2E/", "../../")
-            encoded_rel_path = encoded_rel_path.replace("%2E%2E/", "../")
-            encoded_rel_path = encoded_rel_path.replace("%2F", "/")
-            
-            replacement = f"[{name}]({encoded_rel_path})"
-            
-            # Pattern to match the name as a whole word, not preceded by [ or followed by ]( or )
-            # We already replaced existing links with placeholders, so we just need whole word match.
+            # Pattern to match the name as a whole word
             pattern = re.compile(r'\b' + re.escape(name) + r'\b')
             
-            # We only want to replace if it's not already part of a placeholder
-            new_content = ""
-            last_end = 0
-            for match in pattern.finditer(content):
-                start, end = match.span()
-                # Check if it's inside a placeholder (it shouldn't be because placeholders don't have word boundaries that match names)
-                # But just in case, we check if the match is exactly a placeholder
-                
-                # Append text since last match
-                new_content += content[last_end:start]
-                
-                # Double check: if it's already a link we should skip it.
-                # Since we replaced existing links, we just check if it's part of a word that looks like a placeholder.
-                # Actually, our placeholder is like __LINK_PLACEHOLDER_0__, which won't match '\bName\b'.
-                
-                new_content += replacement
+            encoded_name = urllib.parse.quote(name).replace("%2F", "/")
+            replacement = f"[{name}]({{{{ site.baseurl }}}}/{encoded_name})"
+            
+            def name_replacer(match):
+                nonlocal replacements_in_file
                 replacements_in_file += 1
-                last_end = end
-                
-            new_content += content[last_end:]
-            content = new_content
+                return protect_link(replacement)
+            
+            content = pattern.sub(name_replacer, content)
 
-        # Restore placeholders
+        # 3. Restore placeholders
+        # Since we might have placeholders in a specific order, let's restore them
+        # We use a loop because placeholders are unique and don't contain other placeholders
         for placeholder, original_link in link_placeholders.items():
             content = content.replace(placeholder, original_link)
             
         if content != original_content:
             with open(file_path, "w", encoding="utf-8") as f:
                 f.write(content)
-            print(f"✅ Updated {file_path.as_posix()} ({replacements_in_file} links)")
-            total_replacements += replacements_in_file
+            print(f"✅ Updated {file_path.as_posix()} ({fixed_links_in_file} fixed, {replacements_in_file} new)")
+            total_replacements += fixed_links_in_file + replacements_in_file
 
     print(f"\nDone! Applied {total_replacements} links across the wiki.")
 

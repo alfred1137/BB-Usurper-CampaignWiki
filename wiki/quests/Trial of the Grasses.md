@@ -3,6 +3,6 @@ title: "Trial of the Grasses"
 layout: git-wiki-default
 ---
 
-**Type**: [Character Arc](../../wiki/quests/Character%20Arc.md)
+**Type**: [Character Arc]({{ site.baseurl }}/Character%20Arc)
 
-[NeCola](../../wiki/characters/NeCola.md) underwent the Trial to become a [Vatt'ghern](../../wiki/races/Vatt%27ghern.md).
+[NeCola]({{ site.baseurl }}/NeCola) underwent the Trial to become a [Vatt'ghern]({{ site.baseurl }}/Vatt%27ghern).

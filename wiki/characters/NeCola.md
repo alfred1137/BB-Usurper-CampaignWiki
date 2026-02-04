@@ -10,5 +10,5 @@ layout: git-wiki-default
 **Title**: the Lighthouse
 
 ### Memberships
-* [The Usurper's Bane](../organisations/The%20Usurper's%20Bane.md): Lieutenant
+* [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane): Lieutenant
 

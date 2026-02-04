@@ -8,5 +8,5 @@ layout: git-wiki-default
 **Type**: Company Member
 
 ### Memberships
-* [The Usurper's Bane](../organisations/The%20Usurper's%20Bane.md): Member
+* [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane): Member
 

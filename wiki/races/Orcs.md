@@ -19,7 +19,7 @@ Orcs use their brute force to gain advantage: Young and sometimes Berserkers wil
 
 ## Description
 
-Orcs are large, bulky greenskins with great strength and vitality. Their culture revolves around violence and martial prowess, and their society is structured around the strong taking from the weak. Unlike the closely-related [Goblins](../../wiki/races/Goblins.md), they are brutes which see little purpose in blacksmithing or agriculture, preferring to raid and pillage to get what they need.
+Orcs are large, bulky greenskins with great strength and vitality. Their culture revolves around violence and martial prowess, and their society is structured around the strong taking from the weak. Unlike the closely-related [Goblins]({{ site.baseurl }}/Goblins), they are brutes which see little purpose in blacksmithing or agriculture, preferring to raid and pillage to get what they need.
 
 
 

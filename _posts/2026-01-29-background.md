@@ -3,14 +3,14 @@ title: "Background"
 layout: git-wiki-post
 ---
 
-In the universe of Andrzej Sapkowski's *The Witcher*, **[Vatt'ghern](../wiki/races/Vatt%27ghern.md) **is the term for "witcher" in Elder Speech (*Hen Llinge*). 
+In the universe of Andrzej Sapkowski's *The Witcher*, **[Vatt'ghern]({{ site.baseurl }}/Vatt%27ghern) **is the term for "witcher" in Elder Speech (*Hen Llinge*). 
 
 The ancient language is primarily spoken by elves, mages, and scholars from the Nilfgaardian Empire, whose dialect is heavily derived from Elder Speech.
 
 ### Characteristics
-A [Vatt'ghern](../wiki/races/Vatt%27ghern.md) is not merely a warrior, but a specialized professional operating under a specific code of honor in a dark fantasy setting. 
+A [Vatt'ghern]({{ site.baseurl }}/Vatt%27ghern) is not merely a warrior, but a specialized professional operating under a specific code of honor in a dark fantasy setting. 
 
-**Mutant Physiology**: Due to undergoing the "[Trial of the Grasses](../wiki/quests/Trial%20of%20the%20Grasses.md)" as children, they possess inhumanly acute senses (smell, sight, hearing), enabling them to track prey effortlessly.
+**Mutant Physiology**: Due to undergoing the "[Trial of the Grasses]({{ site.baseurl }}/Trial%20of%20the%20Grasses)" as children, they possess inhumanly acute senses (smell, sight, hearing), enabling them to track prey effortlessly.
 
 **Superhuman Attributes**: They possess exceptional strength, speed, reflexes, and endurance, allowing them to defeat monsters single-handedly.
 

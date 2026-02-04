@@ -27,13 +27,13 @@ All goblins have [[Footwork (Perk)|Footwork]] with fatigue cost halved.
 
 ## Description
 
-Many [Goblins](Goblins.md) and [Orcs](Orcs.md) are known as "Greenskins". Goblins are smaller than humans and appear to be weaker. Instead of brute force they usually ambush their enemies. (Hit-and-run attacks). They use [[Goblin_Poison|poisoned]] [[Ranged_Weapons#Bows|arrows]] and [[Melee_Weapons#One-Handed_Swords|weapons]].
+Many [Goblins]({{ site.baseurl }}/Goblins) and [Orcs]({{ site.baseurl }}/Orcs) are known as "Greenskins". Goblins are smaller than humans and appear to be weaker. Instead of brute force they usually ambush their enemies. (Hit-and-run attacks). They use [[Goblin_Poison|poisoned]] [[Ranged_Weapons#Bows|arrows]] and [[Melee_Weapons#One-Handed_Swords|weapons]].
 
 
 
 ### Political and Social Structure
 
-Goblins live in the lands beyond the reach of human civilization, in small states of their own, often encompassing only a single but heavily populated city. Although distant relatives to the [Orcs](../../wiki/races/Orcs.md), they don’t have much in common apart from their colour of skin.
+Goblins live in the lands beyond the reach of human civilization, in small states of their own, often encompassing only a single but heavily populated city. Although distant relatives to the [Orcs]({{ site.baseurl }}/Orcs), they don’t have much in common apart from their colour of skin.
 
 
 
@@ -45,7 +45,7 @@ Unlike most humans, Goblins are not ruled by a single individual, but a council 
 
 
 
-Goblins do not share a language with [Orcs](../../wiki/races/Orcs.md) and otherwise have little in common, but they are nevertheless able to communicate with them on some level. To avoid roaming Orc tribes raiding their city states they often pay tribute until they’ve passed, and sometimes fight them if they seem weak enough in numbers. [Orcs](../../wiki/races/Orcs.md) have also been used in political machinations and sent against rival Goblin states – which backfired more than once. Goblins consider roaming tribes of [Orcs](../../wiki/races/Orcs.md) almost a force of nature outside of their other rivalries. They’re considered primitive, stupid even. They can be avoided at times, used at other times. But there is no stopping nature in the long run.
+Goblins do not share a language with [Orcs]({{ site.baseurl }}/Orcs) and otherwise have little in common, but they are nevertheless able to communicate with them on some level. To avoid roaming Orc tribes raiding their city states they often pay tribute until they’ve passed, and sometimes fight them if they seem weak enough in numbers. [Orcs]({{ site.baseurl }}/Orcs) have also been used in political machinations and sent against rival Goblin states – which backfired more than once. Goblins consider roaming tribes of [Orcs]({{ site.baseurl }}/Orcs) almost a force of nature outside of their other rivalries. They’re considered primitive, stupid even. They can be avoided at times, used at other times. But there is no stopping nature in the long run.
 
 
 

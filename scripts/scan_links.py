@@ -66,36 +66,15 @@ def scan_links():
                 
                 line_num = content.count('\n', 0, start) + 1
                 
-                # Determine relative path to the entity
-                target_path = entities[name]
-                
-                # Calculate relative path from file_path to target_path
-                # file_path is e.g. _posts/2026-01-01-post.md
-                # target_path is e.g. wiki/characters/HiYun.md
-                
-                try:
-                    # Logic for relative path:
-                    # If in _posts/, we are 1 level deep. Need to go up 1 level to root.
-                    # If in wiki/characters/, we are 2 levels deep. Need to go up 2 levels to root.
-                    
-                    depth = len(file_path.parent.parts)
-                    rel_prefix = "../" * depth
-                    full_rel_path = rel_prefix + target_path
-                    
-                    # URL encode spaces
-                    encoded_rel_path = urllib.parse.quote(full_rel_path)
-                    # But we want to preserve / and ..
-                    encoded_rel_path = encoded_rel_path.replace("%2E%2E/%2E%2E/", "../../")
-                    encoded_rel_path = encoded_rel_path.replace("%2E%2E/", "../")
-                    encoded_rel_path = encoded_rel_path.replace("%2F", "/")
-                except Exception:
-                    encoded_rel_path = target_path # Fallback
+                # The target URL is simply the basename with site.baseurl
+                encoded_name = urllib.parse.quote(name)
+                target_url = f"{{{{ site.baseurl }}}}/{encoded_name}"
 
                 matches_found.append({
                     "file": file_path.as_posix(),
                     "line": line_num,
                     "name": name,
-                    "target": encoded_rel_path,
+                    "target": target_url,
                     "context": line_content
                 })
 
