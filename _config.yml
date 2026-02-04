@@ -1,4 +1,3 @@
-remote_theme: Drassil/git-wiki-theme@master
 # (string) Title of your wiki
 title: "Usurper's Bane Campaign Wiki"
 # (string) if you've installed your wiki in subfolder, you must change this configuration
@@ -138,7 +137,8 @@ inc_after_meta:
 inc_before_scripts:
 inc_after_scripts:
 inc_before_styles:
-inc_after_styles: custom_style.html
+inc_after_styles:
+
 inc_before_header:
 inc_after_header:
 inc_before_tail:

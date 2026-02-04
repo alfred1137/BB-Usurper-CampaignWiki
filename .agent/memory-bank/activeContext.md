@@ -1,21 +1,20 @@
 # Active Context
 
-The migration of Kanka.io entities to the Jekyll wiki structure has been completed. This involved:
+The project has transitioned from a remote Jekyll theme to a locally internalized version of `git-wiki-theme`. This was done to fix dark mode glitches and properly integrate the Catppuccin color scheme.
 
-- Converting 7 Kanka journals to Jekyll `_posts/` with correct dates and slugs.
-- Converting 51 Kanka entities (Characters, Locations, Races, etc.) to Jekyll `wiki/` pages.
-- Organizing gallery assets into `assets/characters/`, `assets/_posts/`, etc.
-- Internal wiki links are resolved to standard Markdown relative links ([Name](../wiki/path/Name.md)).
+## Recent Changes
 
-The migration was performed using a custom Python script `migrate_kanka.py`.
+- **Theme Internalization:** Disconnected `remote_theme` and copied essential theme files (`_layouts`, `_includes`, `_sass`, `assets`) locally.
+- **Catppuccin Integration:**
+  - Created `_sass/_catppuccin.scss` with CSS variables.
+  - Modified `_sass/git-wiki-style.scss` to import Catppuccin variables and map them to theme elements (defaulting to Macchiato flavor).
+- **Fixes:**
+  - Removed `darkmode.js` integration to prevent conflicts with the new CSS-based theming.
+  - Replaced local font references with Google Fonts (Noto Sans) to avoid missing asset issues.
+  - Replaced missing local search script with a CDN link for `simple-jekyll-search`.
+- **Migration:** Kanka.io entities were previously migrated to Jekyll structure.
 
-Recent Updates:
+## Next Steps
 
-- Studied `doc/` directory containing `git-wiki-theme` documentation.
-- Updated `systemPatterns.md` and `techContext.md` with details about the theme's modular architecture, components, and search options.
-
-Next steps:
-
-- User verification of the migrated content.
-- Maintenance of internal links using the `/scan-wiki-links` workflow (Applied 267 links).
-- Ongoing improvements to the Catppuccin-based styling.
+- User verification of the new visual style and functionality.
+- Ongoing maintenance of wiki content and links.
