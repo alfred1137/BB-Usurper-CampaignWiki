@@ -13,6 +13,13 @@ The project has transitioned from a remote Jekyll theme to a locally internalize
   - Removed unused Frappe and Mocha definitions from `_sass/_catppuccin.scss` to reduce size.
   - Removed redundant `assets/css/catppuccin.css` file.
   - Centralized theme switching logic in `_includes/custom_style.html`.
+- **Layout & Typography Improvements (2026-02-04):**
+  - **Sidebar:** Refactored for better hierarchy. Increased title size/weight, added clear section headers for Pages, Posts, and Menu (Edit), and improved spacing.
+  - **Top Bar:** Transformed action links (Add, Edit, Delete, etc.) into prominent button-style elements with interactive states.
+  - **Search Bar:** Increased size and prominence, adding focus animations and better rounding.
+  - **Table of Contents:** Redesigned as a clear, standalone container with a distinct header and improved list styling.
+  - **Headings & Body:** Significantly increased font sizes and weights for H1 and H2. Improved body text readability by increasing base font size to 16px and line height to 1.7.
+  - **Footer:** Left-aligned footer text to match the main content alignment and added a top border for separation.
 - **Fixes:**
   - Removed `darkmode.js` integration to prevent conflicts with the new CSS-based theming.
   - Replaced local font references with Google Fonts (Noto Sans) to avoid missing asset issues.

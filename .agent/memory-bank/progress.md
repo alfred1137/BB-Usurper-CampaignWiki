@@ -10,6 +10,7 @@
 - Internal wiki links are resolved to standard Markdown links ([Name](../path/to/Name.md)).
 - Automated internal link maintenance via `/scan-wiki-links` workflow.
 - **Visual Style:** Catppuccin theme (Latte/Macchiato) fully integrated and enforced.
+- **Layout & Typography:** Comprehensive overhaul of sidebar hierarchy, top-bar action prominence, search bar visibility, TOC styling, and general readability.
 
 ## What's Left to Build
 
