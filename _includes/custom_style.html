@@ -81,6 +81,11 @@
   }
 
   /* Application of colors */
+  /* Universal background to catch everything */
+  * {
+    background-color: inherit;
+  }
+
   html {
     background-color: var(--ctp-main-bg) !important;
     min-height: 100vh;
@@ -92,6 +97,7 @@
     transition: background-color 0.3s, color 0.3s;
     min-height: 100vh;
     margin: 0;
+    padding: 50px;
   }
 
   /* Ensure all major layout containers have proper background */
