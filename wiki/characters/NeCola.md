@@ -15,4 +15,3 @@ NeCola underwent a painful, "Abyssal-stained" **Trial of the Grasses** to become
 
 ### Memberships
 * [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane): Lieutenant
-

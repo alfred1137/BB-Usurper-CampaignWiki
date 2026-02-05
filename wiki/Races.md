@@ -4,8 +4,6 @@ layout: git-wiki-default
 published: true
 ---
 
-# Races and Classes
-
 A guide to the various inhabitants of the world, including the diverse human classes and the monstrous threats that roam the wild.
 
 {% assign subcategories = "Major Race,Special Class,Undead,Greenskin,Monster,Unique" | split: "," %}

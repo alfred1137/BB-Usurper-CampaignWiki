@@ -6,5 +6,4 @@ subcategory: Character Arc
 published: true
 ---
 
-**Type**: Character Arc
 

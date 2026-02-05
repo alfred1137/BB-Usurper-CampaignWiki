@@ -4,8 +4,6 @@ layout: git-wiki-default
 published: true
 ---
 
-# Locations
-
 The world of Battle Brothers is vast and unforgiving. From the northern fortresses to the southern city-states, these are the places where our story unfolds.
 
 {% assign subcategories = "Settlement,Point of Interest" | split: "," %}

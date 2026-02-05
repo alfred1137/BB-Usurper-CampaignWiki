@@ -6,10 +6,6 @@ subcategory: Major Race
 published: true
 ---
 
-![Human]({{ site.baseurl }}/assets/images/a0d34ea4-f3d8-4125-b7b1-5c51f820e05a.webp)
-
-**Type**: Human
-
 Human Factions and Units, including non-humans appearing with them.
 
 

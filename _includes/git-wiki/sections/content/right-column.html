@@ -86,13 +86,16 @@
     {% endif %}
 
     {% assign author = page.author | default: site.author %}
-    {% if author %}
-    <div class="metadata-item">
-      <span class="metadata-label">Author:</span>
-      <span class="metadata-value">{{ author }}</span>
+        {% if author %}
+        <div class="metadata-item">
+          <span class="metadata-label">Author:</span>
+          <span class="metadata-value">{{ author }}</span>
+        </div>
+        {% endif %}
+      </div>
+    
+      {% unless page.path contains 'wiki/' %}
+        {% include git-wiki/components/toc/toc.html %}
+      {% endunless %}
     </div>
-    {% endif %}
-  </div>
-
-  {% include git-wiki/components/toc/toc.html %}
-</div>
+    

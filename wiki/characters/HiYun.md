@@ -15,4 +15,3 @@ HiYun is a noble-born scholar who discovered forbidden knowledge in a secret lib
 
 ### Memberships
 * [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane): Leader
-

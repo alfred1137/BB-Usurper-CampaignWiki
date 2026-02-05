@@ -6,5 +6,4 @@ subcategory: Main Quest
 published: true
 ---
 
-**Type**: Main Quests
 

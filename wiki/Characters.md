@@ -4,8 +4,6 @@ layout: git-wiki-default
 published: true
 ---
 
-# Characters
-
 Welcome to the character directory of the Usurper's Bane Campaign. Here you can find information on the protagonists, the brave members of the mercenary company, and the formidable foes they face.
 
 {% assign subcategories = "Protagonist,Party Member,Antagonist,Support Character" | split: "," %}

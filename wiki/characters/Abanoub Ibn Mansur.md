@@ -10,11 +10,5 @@ avatar: "assets/images/a0f135d7-9152-4e92-8351-0f45b24b95a8.png"
 published: true
 ---
 
-![Abanoub Ibn Mansur]({{ site.baseurl }}/assets/images/a0f135d7-9152-4e92-8351-0f45b24b95a8.png)
-
-**Type**: Company Member
-**Title**: Indebted
-
 ### Memberships
 * [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane): Member
-

@@ -6,8 +6,6 @@ subcategory: Undead
 published: true
 ---
 
-![Zombies]({{ site.baseurl }}/assets/images/a0d34e89-1483-489d-b472-0ebbe56859b4.webp)
-
 Zombies are slower and clumsier than humans, and easy to hit. But their high HP, ability to rise again from the dead and sheer numbers make them hard to kill. Those who fight them can easily exhaust themselves, and will be only able to use a basic attack once, like Zombies they fight. Zombies inflict extra fatigue with their attacks to make it happen sooner.
 
 

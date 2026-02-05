@@ -6,8 +6,6 @@ subcategory: Greenskin
 published: true
 ---
 
-![Goblins]({{ site.baseurl }}/assets/images/a0d34e57-b90a-4c24-bde9-a5ae1dc86554.webp)
-
 Goblins are weak but evasive, like ranged combat and deal extra direct damage. Even their melee fighters use [[Throwing Weapons|throwing weapons]] a lot, and [[Goblin Shaman|Shamans]] have a [[Grant Night Vision (5 fatigue)|spell]] to remove a ranged attackers' weakness, nighttime debuffs.
 
 

@@ -6,8 +6,6 @@ subcategory: Monster
 published: true
 ---
 
-![Beasts]({{ site.baseurl }}/assets/images/a0d34e1c-a78a-4905-b935-81d0b3a85642.webp)
-
 # Wild Beasts
 
 Various wild beasts roam the lands. Different beasts are allied with each other, because they belong to the same faction. However, in some events beasts can be hostile to each other.

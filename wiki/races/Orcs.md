@@ -6,8 +6,6 @@ subcategory: Greenskin
 published: true
 ---
 
-![Orcs]({{ site.baseurl }}/assets/images/a0d34e6e-6524-46fb-9aab-1536b0227fca.webp)
-
 ## Orcs
 
 Orcs are all very tough and strong. Their weapons are crude but very heavy, and Orcs also have damage modifiers, dealing even more damage with them. Stronger Orcs are immune to stun and pushback. All Orcs are easy to hit, having low or negative defense values, and their resolve also isn't very high.

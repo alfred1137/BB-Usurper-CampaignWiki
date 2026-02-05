@@ -4,8 +4,6 @@ layout: git-wiki-default
 published: true
 ---
 
-# Quests
-
 The journey of the Usurper's Bane is marked by many trials, from personal arcs to the grand mandate of the Great Raven.
 
 {% assign subcategories = "Main Quest,Character Arc,Side Quest" | split: "," %}

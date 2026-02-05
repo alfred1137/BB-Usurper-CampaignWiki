@@ -6,6 +6,4 @@ subcategory: Character Arc
 published: true
 ---
 
-**Type**: [Character Arc]({{ site.baseurl }}/Character%20Arc)
-
 [NeCola]({{ site.baseurl }}/NeCola) underwent the Trial to become a [Vatt'ghern]({{ site.baseurl }}/Vatt%27ghern).

@@ -6,10 +6,6 @@ subcategory: Undead
 published: true
 ---
 
-![Ancient Dead]({{ site.baseurl }}/assets/images/a0d34df6-2367-41c6-a3c6-e36ec3b9fe1e.webp)
-
-# Ancient Dead
-
 ## Tactics
 
 Ancient Dead fight in a tight formation, which they try to not break. Their main strength is the shieldwall that they can maintain indefinitely. In the early game you will only see weak unarmored Auxiliaries, but later you will face Legionaries with their medium armor and backline full of pikemen. Their Priests summon harmful gas clouds that damage HP directly without missing, and their other spell can lower your morale and even stun.

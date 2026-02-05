@@ -4,8 +4,6 @@ layout: git-wiki-default
 published: true
 ---
 
-# Organisations
-
 Various factions and groups vie for power and survival in this tainted world.
 
 {% assign subcategories = "Mercenary Company" | split: "," %}

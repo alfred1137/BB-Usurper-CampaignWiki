@@ -6,5 +6,4 @@ subcategory: Side Quest
 published: true
 ---
 
-**Type**: Sidequests
 
