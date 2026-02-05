@@ -3,21 +3,88 @@
     {% include git-wiki/components/action_btn/page_actions.html %}
   </div>
 
-  {% if page.date or page.type %}
   <div class="metadata-box">
-    <span class="metadata-title">Information</span>
+    <span class="metadata-title">{{ page.title }}</span>
+    
+    {% if page.alias and page.alias != "" %}
+    <div style="text-align: center; font-style: italic; margin-bottom: 12px; color: var(--ctp-main-subtext0); font-size: 14px;">
+      {{ page.alias }}
+    </div>
+    {% endif %}
+
+    {% if page.avatar %}
+    <div style="text-align: center; margin-bottom: 15px; background-color: var(--ctp-main-crust); border-radius: 8px; padding: 10px;">
+      <img src="{{ site.baseurl }}/{{ page.avatar }}" alt="{{ page.title }}" style="border-radius: 4px; max-height: 250px; width: auto; display: block; margin: 0 auto;">
+    </div>
+    {% endif %}
+
+    {% if page.is_dead == true or page.is_dead == false %}
+    <div class="metadata-item">
+      <span class="metadata-label">Status:</span>
+      <span class="metadata-value">{% if page.is_dead %}💀 Dead{% else %}❤️ Alive{% endif %}</span>
+    </div>
+    {% endif %}
+
+    {% if page.category %}
+    <div class="metadata-item">
+      <span class="metadata-label">Category:</span>
+      <span class="metadata-value">
+        <a href="{{ site.baseurl }}/{{ page.category }}">{{ page.category }}</a>
+      </span>
+    </div>
+    {% endif %}
+
+    {% if page.subcategory %}
+    <div class="metadata-item">
+      <span class="metadata-label">Subcategory:</span>
+      <span class="metadata-value">{{ page.subcategory }}</span>
+    </div>
+    {% endif %}
+
+    {% if page.affiliation %}
+    <div class="metadata-item">
+      <span class="metadata-label">Affiliation:</span>
+      <span class="metadata-value">
+        <a href="{{ site.baseurl }}/{{ page.affiliation | replace: ' ', '%20' }}">{{ page.affiliation }}</a>
+      </span>
+    </div>
+    {% endif %}
+
+    {% if page.sex %}
+    <div class="metadata-item">
+      <span class="metadata-label">Sex:</span>
+      <span class="metadata-value">{{ page.sex }}</span>
+    </div>
+    {% endif %}
+
+    {% if page.origin %}
+    <div class="metadata-item">
+      <span class="metadata-label">Origin:</span>
+      <span class="metadata-value">{{ page.origin }}</span>
+    </div>
+    {% endif %}
+
+    {% if page.role %}
+    <div class="metadata-item">
+      <span class="metadata-label">Role:</span>
+      <span class="metadata-value">{{ page.role }}</span>
+    </div>
+    {% endif %}
+
     {% if page.date %}
     <div class="metadata-item">
       <span class="metadata-label">Date:</span>
       <span class="metadata-value">{{ page.date | date: "%-d %B %Y" }}</span>
     </div>
     {% endif %}
+
     {% if page.type %}
     <div class="metadata-item">
       <span class="metadata-label">Type:</span>
       <span class="metadata-value">{{ page.type }}</span>
     </div>
     {% endif %}
+
     {% assign author = page.author | default: site.author %}
     {% if author %}
     <div class="metadata-item">
@@ -26,7 +93,6 @@
     </div>
     {% endif %}
   </div>
-  {% endif %}
 
   {% include git-wiki/components/toc/toc.html %}
 </div>
