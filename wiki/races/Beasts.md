@@ -1,6 +1,8 @@
 ---
 title: "Beasts"
 layout: git-wiki-default
+category: Races
+subcategory: Monster
 ---
 
 ![Beasts]({{ site.baseurl }}/assets/images/a0d34e1c-a78a-4905-b935-81d0b3a85642.webp)

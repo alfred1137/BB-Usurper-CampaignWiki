@@ -1,5 +1,7 @@
 ---
 title: "Hammererden"
 layout: git-wiki-default
+category: Locations
+subcategory: Settlement
 ---
 

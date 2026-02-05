@@ -40,23 +40,23 @@ This campaign series and the featured gameplay mechanics are built upon the foun
 
 The core tactical experience, brutal atmosphere, and low-fantasy setting are the original work of Overhype Studios. Their mastery of turn-based mercenary management serves as the essential canvas for this entire narrative.
 
-* Official Steam Page
+* [Official Steam Page](https://store.steampowered.com/app/365360/Battle_Brothers/)
 
 ### The Legends Team (Legends Mod)
 
 The Legends Mod provides the comprehensive overhaul required for this campaign's complexity. By introducing layered armor, dynamic perk trees, and expanded world mechanics, this team has fundamentally evolved the depth of the base game.
 
-* Legends Public GitHub
+* [Legends Public GitHub](https://github.com/Battle-Brothers-Legends/Legends-public)
 
 ### Abyss & Lone Mind (Rise of the Usurper - RotU)
 
 The occult narrative, the 19-floor Usurper Dungeon, and the Abyssal [Mage]({{ site.baseurl }}/Mage) origin are credited to the RotU team. Their work introduces the high-stakes "Tainted World" mechanics and the divine influence of the Great Raven and [Davkul]({{ site.baseurl }}/Davkul).
 
-* Abysscrane's Discord
+* [Abysscrane's Discord](https://discord.gg/nuuVDj9p)
 
 ### TheBlueTemplar (Path of Vatt'ghern - PoV)
 
 The Witcher-inspired mutations and specialized companion origins (such as [NeCola]({{ site.baseurl }}/NeCola)) are powered by the PoV mod. This project integrates the alchemical [Trial of the Grasses]({{ site.baseurl }}/Trial%20of%20the%20Grasses) and [Vatt'ghern]({{ site.baseurl }}/Vatt%27ghern) backgrounds as a specialized submod of Legends.
 
-* PoV Public on Github
-* TheBlueTemplar's Discord
+* [PoV Public on Github](https://github.com/TheBlueTemplar/Path_Of_The_Vattghern_Public)
+* [TheBlueTemplar's Discord](https://discord.com/invite/zhHTjM5bBB)

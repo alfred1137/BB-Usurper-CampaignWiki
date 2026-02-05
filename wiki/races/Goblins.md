@@ -1,6 +1,8 @@
 ---
 title: "Goblins"
 layout: git-wiki-default
+category: Races
+subcategory: Greenskin
 ---
 
 ![Goblins]({{ site.baseurl }}/assets/images/a0d34e57-b90a-4c24-bde9-a5ae1dc86554.webp)

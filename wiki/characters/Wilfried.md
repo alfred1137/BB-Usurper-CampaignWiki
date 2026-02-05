@@ -1,6 +1,12 @@
 ---
 title: "Wilfried"
 layout: git-wiki-default
+category: Characters
+subcategory: Party Member
+alias: "The Chat Rebel"
+affiliation: "The Usurper's Bane"
+is_dead: false
+avatar: "assets/images/a0f13587-cf0b-4efe-8deb-f6d2092b8422.png"
 ---
 
 ![Wilfried]({{ site.baseurl }}/assets/images/a0f13587-cf0b-4efe-8deb-f6d2092b8422.png)
