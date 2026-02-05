@@ -9,9 +9,17 @@ is_dead: false
 avatar: "assets/images/a0d2cd5d-ed8a-46d0-abee-d1f2e88913cf.png"
 sex: "Male"
 published: true
+origin: "Noble"
+role: "Leader / Mage"
 ---
 
-HiYun is a noble-born scholar who discovered forbidden knowledge in a secret library. After surviving a ritual in a hidden crypt described in the **Raven Tome**, he became the "Chosen" of **The Changer** (the Great Raven), a god of chaos.
+### Description
+HiYun is a noble-born scholar who discovered forbidden knowledge in a secret library. After surviving a ritual in a hidden crypt described in the **Raven Tome**, he becomes the "Chosen" of **The Changer** (the Great Raven), a god of chaos.
+
+### Combat Record
+* **Kills**: 0
+* **Injuries**: None
+* **Notable Feats**: Survived the Abyss ritual.
 
 ### Memberships
 * [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane): Leader

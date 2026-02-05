@@ -8,7 +8,17 @@ affiliation: "The Usurper's Bane"
 is_dead: false
 avatar: "assets/images/a0f135d7-9152-4e92-8351-0f45b24b95a8.png"
 published: true
+origin: "[Background]"
+role: "[Frontline / Backline / Support]"
 ---
+
+### Description
+[Add character history and personality here]
+
+### Combat Record
+* **Kills**: 0
+* **Injuries**: None
+* **Notable Feats**: [Add notable achievements]
 
 ### Memberships
 * [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane): Member

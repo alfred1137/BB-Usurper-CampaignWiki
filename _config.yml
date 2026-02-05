@@ -73,6 +73,7 @@ exclude:
   - vendor
   - .git
   - .gitignore
+  - doc
 
 #
 # Jekyll configurations
