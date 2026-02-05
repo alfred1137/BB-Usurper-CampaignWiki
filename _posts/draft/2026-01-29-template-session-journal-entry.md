@@ -1,13 +1,23 @@
 ---
 title: "TEMPLATE - Session Journal Entry"
 layout: git-wiki-post
+type: Story
 published: false
 ---
 
-**Type**: Session
 
 main body goes here
 
+
 ---
 
-[Table omitted - see original]
+<table border="0">
+  <tr>
+    <td>⏏️ Return to catalogue</td>
+    <td>➡️ Read next chatper</td>
+  </tr>
+  <tr>
+    <td>Campaign Jounrals</td>
+    <td>NEXT</td>
+  </tr>
+</table>
