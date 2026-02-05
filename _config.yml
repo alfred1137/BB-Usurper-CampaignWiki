@@ -29,7 +29,7 @@ show_downloads: false
 # (string) Specify branch rendered by gitpages allowing wiki tool buttons to work
 git_branch: "master"
 # (string) Url of logo image, it can be full, absolute or relative.
-logo_url:
+logo_url: "/assets/images/a0d351d3-7a92-4e3c-9196-96ca00ba8f06.png"
 
 # (string) Catppuccin flavor: latte, frappe, macchiato, mocha
 # Default: macchiato

@@ -4,7 +4,7 @@ layout: git-wiki-default
 published: true
 ---
 
-![Campaign chronicle]({{ site.baseurl }}/assets/images/a0d351d3-7a92-4e3c-9196-96ca00ba8f06.png)
+![Campaign Cover]({{ site.baseurl }}/assets/images/CampaignCover.webp)
 
 ## Introduction
 

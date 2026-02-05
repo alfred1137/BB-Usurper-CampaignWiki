@@ -9,10 +9,12 @@
     {% include {{ site.inc_before_content }} %}
     {% endif %}
 
-    {% if page.path contains 'wiki/' %}
+    {% if page.path contains 'wiki/' or page.path == 'index.md' or page.path contains '_posts/' %}
       <h1>{{ page.title }}</h1>
-      {% include git-wiki/components/toc/toc.html %}
-      <hr>
+      {% if page.path contains 'wiki/' %}
+        {% include git-wiki/components/toc/toc.html %}
+        <hr>
+      {% endif %}
     {% endif %}
 
     <div id="git-wiki-content">
