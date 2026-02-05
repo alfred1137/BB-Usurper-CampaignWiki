@@ -29,6 +29,8 @@ Gameplay is organised by sessions. Each session is then documented as a journal 
 {% endfor %}
 </ul>
 
+<p><a href="{{ '/Campaign%20Journals' | relative_url }}">View all journals →</a></p>
+
 ---
 
 ![Credits]({{ site.baseurl }}/assets/images/a0d4a6a1-1b31-4bc5-875f-d6fca6988289.jpg)
