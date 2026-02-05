@@ -1,10 +1,10 @@
 ---
 title: "Hiltrude"
 layout: git-wiki-default
-category: Characters
+category: [Characters]({{ site.baseurl }}/Characters)
 subcategory: Party Member
 alias: "The Grieving Widow"
-affiliation: "The Usurper's Bane"
+affiliation: "[The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane)"
 is_dead: true
 avatar: "assets/images/a0d2f1a5-4cc6-496c-bae4-8f4a41d7e7a7.webp"
 origin: "Widow"
@@ -14,7 +14,7 @@ published: false
 
 ## Description
 
-Hiltrude was a widow from Ohnemenschen whose life fell apart after a brigand struck her husband down. Forced onto the streets and depending on the goodwill of others, her health had declined significantly by the time she joined the company for a mere 50 crowns. She was designated as fodder and met a swift and messy end during the purge of the Remote Graveyard, where she fell to the supernatural horrors haunting the site.
+Hiltrude was a widow from [Ohnemenschen]({{ site.baseurl }}/Ohnemenschen) whose life fell apart after a brigand struck her husband down. Forced onto the streets and depending on the goodwill of others, her health had declined significantly by the time she joined the company for a mere 50 crowns. She was designated as fodder and met a swift and messy end during the purge of the Remote Graveyard, where she fell to the supernatural horrors haunting the site.
 
 ## Notable Record
 

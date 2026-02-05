@@ -1,10 +1,10 @@
 ---
 title: "Kaetherlen"
 layout: git-wiki-default
-category: Characters
+category: [Characters]({{ site.baseurl }}/Characters)
 subcategory: Party Member
 alias: "The Bone Cripple"
-affiliation: "The Usurper's Bane"
+affiliation: "[The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane)"
 is_dead: true
 avatar: "assets/images/a0ef93e5-ea1b-4224-8f02-c656d5c90fb2.png"
 origin: "Bone Cripple"

@@ -1,7 +1,7 @@
 ---
 title: "Goblins"
 layout: git-wiki-default
-category: Races
+category: [Races]({{ site.baseurl }}/Races)
 subcategory: Greenskin
 published: true
 ---

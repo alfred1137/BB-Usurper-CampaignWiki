@@ -1,7 +1,7 @@
 ---
 title: "Beasts"
 layout: git-wiki-default
-category: Races
+category: [Races]({{ site.baseurl }}/Races)
 subcategory: Monster
 published: true
 ---

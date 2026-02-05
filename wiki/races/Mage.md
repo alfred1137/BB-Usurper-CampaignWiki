@@ -1,7 +1,7 @@
 ---
 title: "Mage"
 layout: git-wiki-default
-category: Races
+category: [Races]({{ site.baseurl }}/Races)
 subcategory: Special Class
 published: true
 ---
@@ -14,6 +14,6 @@ Practitioners like [HiYun]({{ site.baseurl }}/HiYun) draw their power from the v
 
 ## Characteristics
 
-* **Arcane Visage**: Powerful magic often leaves a physical mark on its wielder, such as HiYun's green face.
+* **Arcane Visage**: Powerful magic often leaves a physical mark on its wielder, such as [HiYun]({{ site.baseurl }}/HiYun)'s green face.
 * **Mastery of the Void**: The ability to channel "Twisted Shock" and other Abyssal energies.
 * **Ritual Study**: The constant pursuit of knowledge through the autopsy of supernatural creatures and the decoding of ancient tomes.

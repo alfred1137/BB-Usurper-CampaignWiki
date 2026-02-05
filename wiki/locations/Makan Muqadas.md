@@ -1,7 +1,7 @@
 ---
 title: "Makan Muqadas"
 layout: git-wiki-default
-category: Locations
+category: [Locations]({{ site.baseurl }}/Locations)
 subcategory: Settlement
 published: false
 ---
@@ -10,5 +10,5 @@ Makan Muqadas is the religious heart of the Southern City-States, a city of shim
 
 ## Notable Events
 
-* **The Shepherd's End**: The site where the company recruited Muyahid Ibn Nusa, who met a swift end at the hands of an Orc Warrior shortly after.
-* **The Vizier's Dismissal**: HiYun and the company were coldly paid and discarded by Bilal Al-Fad after clearing a camp of nomads and their monstrous allies.
+* **The Shepherd's End**: The site where the company recruited [Muyahid]({{ site.baseurl }}/Muyahid) Ibn Nusa, who met a swift end at the hands of an Orc Warrior shortly after.
+* **The Vizier's Dismissal**: [HiYun]({{ site.baseurl }}/HiYun) and the company were coldly paid and discarded by Bilal Al-Fad after clearing a camp of nomads and their monstrous allies.

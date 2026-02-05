@@ -1,7 +1,7 @@
 ---
 title: "Vatt'ghern"
 layout: git-wiki-default
-category: Races
+category: [Races]({{ site.baseurl }}/Races)
 subcategory: Special Class
 published: true
 ---
@@ -10,7 +10,7 @@ Vatt'ghern, also known as Witchers, are humans who have undergone extensive phys
 
 ## The Transformation
 
-The centerpiece of becoming a Vatt'ghern is the **Trial of the Grasses**, a dangerous procedure involving the ingestion of specialized mutagens. Those who survive emerge with inhuman strength, reflexes, and senses. In the Usurper's Bane campaign, these mutations are often "Abyssal-stained," drawing power from the dark magic of the Great Raven.
+The centerpiece of becoming a Vatt'ghern is the **[Trial of the Grasses]({{ site.baseurl }}/Trial%20of%20the%20Grasses)**, a dangerous procedure involving the ingestion of specialized mutagens. Those who survive emerge with inhuman strength, reflexes, and senses. In the Usurper's Bane campaign, these mutations are often "Abyssal-stained," drawing power from the dark magic of the Great Raven.
 
 ## Characteristics
 

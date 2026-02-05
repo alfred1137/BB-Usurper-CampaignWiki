@@ -1,12 +1,12 @@
 ---
 title: "Thal"
 layout: git-wiki-default
-category: Locations
+category: [Locations]({{ site.baseurl }}/Locations)
 subcategory: Settlement
 published: true
 ---
 
-Thal is a town located a day's march east of Stohl. Known for its extensive wheat fields, it has been a frequent site of both supernatural anomalies and contract work for The Usurper's Bane. The town is governed by a series of stewards and elders, including Frank of Thal and Volmar the Steward, who have often called upon the company to resolve their numerous crises.
+Thal is a town located a day's march east of [Stohl]({{ site.baseurl }}/Stohl). Known for its extensive wheat fields, it has been a frequent site of both supernatural anomalies and contract work for [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane). The town is governed by a series of stewards and elders, including Frank of Thal and Volmar the Steward, who have often called upon the company to resolve their numerous crises.
 
 ## Notable Events
 

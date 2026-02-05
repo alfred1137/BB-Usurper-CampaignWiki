@@ -1,10 +1,10 @@
 ---
 title: "Sorrel"
 layout: git-wiki-default
-category: Characters
+category: [Characters]({{ site.baseurl }}/Characters)
 subcategory: Party Member
 alias: "The Accidental Killer"
-affiliation: "The Usurper's Bane"
+affiliation: "[The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane)"
 is_dead: true
 avatar: "assets/images/a0d2f1a5-4cc6-496c-bae4-8f4a41d7e7a7.webp"
 origin: "Miner"
@@ -14,7 +14,7 @@ published: false
 
 ## Description
 
-Sorrel was a miner from Gipfelfeste whose life was defined by a tragic accident in the dark tunnels where he unintentionally killed a coworker. Seeking to escape the memory of his past, he joined the company as fodder. He carried the grim strength of a man used to breaking stone and survived several brutal mountain skirmishes. His journey reached its final stop during a rematch with a self-proclaimed "King of the North," where he fell holding the line for his brothers.
+Sorrel was a miner from [Gipfelfeste]({{ site.baseurl }}/Gipfelfeste) whose life was defined by a tragic accident in the dark tunnels where he unintentionally killed a coworker. Seeking to escape the memory of his past, he joined the company as fodder. He carried the grim strength of a man used to breaking stone and survived several brutal mountain skirmishes. His journey reached its final stop during a rematch with a self-proclaimed "King of the North," where he fell holding the line for his brothers.
 
 ## Notable Record
 

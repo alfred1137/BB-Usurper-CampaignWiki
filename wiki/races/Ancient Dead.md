@@ -1,7 +1,7 @@
 ---
 title: "Ancient Dead"
 layout: git-wiki-default
-category: Races
+category: [Races]({{ site.baseurl }}/Races)
 subcategory: Undead
 published: true
 ---

@@ -1,12 +1,12 @@
 ---
 title: "The Usurper's Bane"
 layout: git-wiki-default
-category: Organisations
+category: [Organisations]({{ site.baseurl }}/Organisations)
 subcategory: Mercenary Company
 published: true
 ---
 
-The Usurper's Bane is a mercenary company led by the Abyssal Mage, HiYun, and his lieutenant, NeCola the Vatt'ghern. Founded on the outskirts of the Southern Wilds with a handful of desperate fishermen, the company has grown into a formidable regional power with a mission to topple the Usurper King and purge his chaotic influence from the world.
+The Usurper's Bane is a mercenary company led by the Abyssal [Mage]({{ site.baseurl }}/Mage), [HiYun]({{ site.baseurl }}/HiYun), and his lieutenant, [NeCola]({{ site.baseurl }}/NeCola) the [Vatt'ghern]({{ site.baseurl }}/Vatt%27ghern). Founded on the outskirts of the Southern Wilds with a handful of desperate fishermen, the company has grown into a formidable regional power with a mission to topple the Usurper King and purge his chaotic influence from the world.
 
 ## History
 
@@ -16,7 +16,7 @@ The company began as a ragtag group of "fodder" recruits, often marked by the Ra
 
 * **Champion Slayers**: Defeated legendary foes like Bakh Lob the Boil Burster and Borealis the Primal.
 * **The Company Standard**: Officially raised a banner in the northern hills, signaling their transition from wandering vagabonds to a professional outfit.
-* **Mastery of the Trial**: Successfully guided NeCola through the Trial of the Grasses and began experimenting with advanced mutations like the Geist Mutagen.
+* **Mastery of the Trial**: Successfully guided [NeCola]({{ site.baseurl }}/NeCola) through the [Trial of the Grasses]({{ site.baseurl }}/Trial%20of%20the%20Grasses) and began experimenting with advanced mutations like the Geist Mutagen.
 
 ## Company Members
 
@@ -26,7 +26,7 @@ The company began as a ragtag group of "fodder" recruits, often marked by the Ra
 ### {{ subcat }}s
 
 <ul>
-{% assign members = site.pages | where: "category", "Characters" | where: "subcategory", subcat | where: "affiliation", "The Usurper's Bane" | sort: "title" %}
+{% assign members = site.pages | where: "category", "[Characters]({{ site.baseurl }}/Characters)" | where: "subcategory", subcat | where: "affiliation", "The Usurper's Bane" | sort: "title" %}
 {% for member in members %}
   <li>
     <a href="{{ member.url | relative_url }}">{{ member.title }}</a>

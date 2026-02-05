@@ -1,7 +1,7 @@
 ---
 title: "Human"
 layout: git-wiki-default
-category: Races
+category: [Races]({{ site.baseurl }}/Races)
 subcategory: Major Race
 published: true
 ---

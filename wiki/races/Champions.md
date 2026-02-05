@@ -1,7 +1,7 @@
 ---
 title: "Champions"
 layout: git-wiki-default
-category: Races
+category: [Races]({{ site.baseurl }}/Races)
 subcategory: Unique
 published: true
 ---
@@ -14,7 +14,7 @@ Champions are particularly skilled and experienced individuals who stand head an
 An Orc Berserker Champion encountered in the northern foothills. He was a force of pure, chaotic violence, wielding massive axes and shrugging off wounds that would fell a normal man. He was eventually brought down by the company at the cost of two original fodder members.
 
 ### Borealis the Primal
-A legendary juggernaut clad in over 1,000 durability points of frost-rimed plate armor. He rampaged near Wolkenburg before being systematically executed by the combined magic and steel of The Usurper's Bane.
+A legendary juggernaut clad in over 1,000 durability points of frost-rimed plate armor. He rampaged near [Wolkenburg]({{ site.baseurl }}/Wolkenburg) before being systematically executed by the combined magic and steel of [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane).
 
 ### "King of the North"
 A self-proclaimed monarch of the wastes who faced the company in multiple rematches. Clad in trophies and arrogance, he was eventually dismantled by the company's elite core.

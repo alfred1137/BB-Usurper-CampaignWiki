@@ -6,7 +6,7 @@ published: true
 
 The journey of the Usurper's Bane is marked by many trials, from personal arcs to the grand mandate of the Great Raven.
 
-{% assign subcategories = "Main Quest,Character Arc,Side Quest" | split: "," %}
+{% assign subcategories = "Main Quest,[Character Arc]({{ site.baseurl }}/Character%20Arc),Side Quest" | split: "," %}
 
 {% for subcat in subcategories %}
 ## {{ subcat }}s

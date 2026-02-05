@@ -6,7 +6,7 @@ published: false
 
 # Blood-soaked Sand around Makan Muqadas
 
-    The white domes of Makan Muqadas—a holy city that felt more like a tomb to my Northern sensibilities—shimmered under the Gilder’s sun like the bleached skulls of giants. We had left the remains of [Bardol]({{ site.baseurl }}/Bardol) and [Jan]({{ site.baseurl }}/Jan) to the carrion birds, their boasted "immortality" proving only a temporary delay to the Raven’s hunger. I stood at the threshold of the Great Arena, the air thick with the cloying scent of frankincense, roasted meats, and the copper tang of fresh blood. My company, the Usurper's Bane, was now a lean, predatory thing—a collection of spectral remnants and mutated killers bound by my Abyssal will. We had three victories in the pits already; ambition demanded two more, and the desert was eager to provide the victims.
+    The white domes of Makan Muqadas—a holy city that felt more like a tomb to my Northern sensibilities—shimmered under the Gilder’s sun like the bleached skulls of giants. We had left the remains of [Bardol]({{ site.baseurl }}/Bardol) and [Jan]({{ site.baseurl }}/Jan) to the carrion birds, their boasted "immortality" proving only a temporary delay to the Raven’s hunger. I stood at the threshold of the Great [Arena]({{ site.baseurl }}/Arena), the air thick with the cloying scent of frankincense, roasted meats, and the copper tang of fresh blood. My company, the Usurper's Bane, was now a lean, predatory thing—a collection of spectral remnants and mutated killers bound by my Abyssal will. We had three victories in the pits already; ambition demanded two more, and the desert was eager to provide the victims.
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Sun, Sand, and End of My Fodders Who Refuse to Die (Session 5)"
+title: "Sun, Sand, and End of My [Fodders]({{ site.baseurl }}/Fodders) Who Refuse to Die (Session 5)"
 layout: git-wiki-post
 published: false
 ---
@@ -13,19 +13,19 @@ The heat of the Southern deserts is not like the chill of the North; it does not
     ## The manhunter’s tithe and the gilded gates
 
 
-    On the morning of Day 14, as the white spires of [Ras Karim]({{ site.baseurl }}/Ras%20Karim) flickered like a mirage on the horizon, we encountered a grim procession. A line of men in heavy iron chains was being driven through the sand by a manhunter whose ivory teeth flashed in a predatory grin. He claimed they were 'Indebted'—souls paying for the sins of their ancestors—but a voice cried out from the ranks, a sharp Northern accent that cut through the humid air. It was a sailor, a man named Frethold, who claimed he was no slave but a mariner captured by pirates. [Bardol]({{ site.baseurl }}/Bardol), with a moment of supernatural recognition that could only be a twist of the Raven’s own hand, identified the man as a former shipmate from winters past.
+    On the morning of Day 14, as the white spires of [Ras Karim]({{ site.baseurl }}/Ras%20Karim) flickered like a mirage on the horizon, we encountered a grim procession. A line of men in heavy iron chains was being driven through the sand by a manhunter whose ivory teeth flashed in a predatory grin. He claimed they were 'Indebted'—souls paying for the sins of their ancestors—but a voice cried out from the ranks, a sharp Northern accent that cut through the humid air. It was a sailor, a man named [Frethold]({{ site.baseurl }}/Frethold), who claimed he was no slave but a mariner captured by pirates. [Bardol]({{ site.baseurl }}/Bardol), with a moment of supernatural recognition that could only be a twist of the Raven’s own hand, identified the man as a former shipmate from winters past.
 
 
 
-    The manhunter, perhaps sensing the Abyssal aura radiating from my form or seeing the yellow, predatory eyes of [NeCola]({{ site.baseurl }}/NeCola) shifting beneath her hood, chose the path of least resistance. He released Frethold, claiming the Gilder had ordained this meeting. I saw it differently: I saw a fresh body to replace the meat we had lost to the hyenas. Frethold joined our ranks, salt-crusted and sun-scorched, another fisherman destined to find the Abyss in the middle of a wasteland. We entered the gates of [Ras Karim]({{ site.baseurl }}/Ras%20Karim) shortly after, the air thick with the smell of roasting meats, exotic spices, and the copper tang of the nearby Arena.
+    The manhunter, perhaps sensing the Abyssal aura radiating from my form or seeing the yellow, predatory eyes of [NeCola]({{ site.baseurl }}/NeCola) shifting beneath her hood, chose the path of least resistance. He released [Frethold]({{ site.baseurl }}/Frethold), claiming the Gilder had ordained this meeting. I saw it differently: I saw a fresh body to replace the meat we had lost to the hyenas. [Frethold]({{ site.baseurl }}/Frethold) joined our ranks, salt-crusted and sun-scorched, another fisherman destined to find the Abyss in the middle of a wasteland. We entered the gates of [Ras Karim]({{ site.baseurl }}/Ras%20Karim) shortly after, the air thick with the smell of roasting meats, exotic spices, and the copper tang of the nearby [Arena]({{ site.baseurl }}/Arena).
 
 
 
-    We had struck gold in this den of merchants; the sell prices were a tribute to the desperation of the South. But it was the Arena that called to me—a place where the transition from life to death is a spectator sport. I set our ambition: five victories in the pits to prove that the Usurper’s Bane was a name to be feared even in these gilded lands.
+    We had struck gold in this den of merchants; the sell prices were a tribute to the desperation of the South. But it was the [Arena]({{ site.baseurl }}/Arena) that called to me—a place where the transition from life to death is a spectator sport. I set our ambition: five victories in the pits to prove that the Usurper’s Bane was a name to be feared even in these gilded lands.
 
 
 
-    ## The blood-stained sands of the Arena
+    ## The blood-stained sands of the [Arena]({{ site.baseurl }}/Arena)
 
 
     Our first bout was against two desert nomads for a purse of over fifteen hundred crowns. I stepped onto the hot sand alongside [NeCola]({{ site.baseurl }}/NeCola) and the seemingly immortal [Bardol]({{ site.baseurl }}/Bardol). [NeCola]({{ site.baseurl }}/NeCola) moved with a grace that transcended human limits, her [Vatt'ghern]({{ site.baseurl }}/Vatt%27ghern) mutations allowing her to weave through the nomads' scimitars as if she were a ghost dancing in the wind. She dispatched them with a cold efficiency that left the crowd in a stunned silence before they erupted in a roar of bloodlust. [Bardol]({{ site.baseurl }}/Bardol), true to his curse, held the line with a frantic, desperate effort, absorbing a blow that would have decapitated a lesser man. He was struck down, his blood painting the sand, yet he refused to yield his final breath.
@@ -47,7 +47,7 @@ The heat of the Southern deserts is not like the chill of the North; it does not
 
 
 
-    But the cost was the end of an era. The "Immortals" of my frontline—the men who had survived the Northern wastes and the Geist's scream—finally reached their limit. Frethold, the sailor we had just rescued, was the first to fall. Then [Jan]({{ site.baseurl }}/Jan) the Bright, whose luck finally ran dry in a spray of gore. And finally, [Bardol]({{ site.baseurl }}/Bardol) F, the man who had cheated death a dozen times, was torn apart by the Embalmed Slave. I watched them fall, and for a moment, the desert was silent save for the buzzing of flies. [Wilfried]({{ site.baseurl }}/Wilfried) B, my spectral warrior, stood over the bodies and asked what should be done. I did not hesitate. "Loot the bodies," I commanded, my voice like the dry wind. "Leave the dead to the birds".
+    But the cost was the end of an era. The "Immortals" of my frontline—the men who had survived the Northern wastes and the Geist's scream—finally reached their limit. [Frethold]({{ site.baseurl }}/Frethold), the sailor we had just rescued, was the first to fall. Then [Jan]({{ site.baseurl }}/Jan) the Bright, whose luck finally ran dry in a spray of gore. And finally, [Bardol]({{ site.baseurl }}/Bardol) F, the man who had cheated death a dozen times, was torn apart by the Embalmed Slave. I watched them fall, and for a moment, the desert was silent save for the buzzing of flies. [Wilfried]({{ site.baseurl }}/Wilfried) B, my spectral warrior, stood over the bodies and asked what should be done. I did not hesitate. "Loot the bodies," I commanded, my voice like the dry wind. "Leave the dead to the birds".
 
 
 
@@ -61,7 +61,7 @@ The heat of the Southern deserts is not like the chill of the North; it does not
     ## Session wrap
 
 
-    The journey saw several key encounters: we claimed the sailor Frethold from a Southern slaver; secured three of the five arena victories necessary for my current ambition in [Ras Karim]({{ site.baseurl }}/Ras%20Karim); and were ambushed by a Necromancer’s company, which, despite our victory, collapsed our entire old frontline. We even assisted the city-state scouts against an Icy Golem and Possessed Raiders outside Makan Muqadas itself.
+    The journey saw several key encounters: we claimed the sailor [Frethold]({{ site.baseurl }}/Frethold) from a Southern slaver; secured three of the five arena victories necessary for my current ambition in [Ras Karim]({{ site.baseurl }}/Ras%20Karim); and were ambushed by a Necromancer’s company, which, despite our victory, collapsed our entire old frontline. We even assisted the city-state scouts against an Icy Golem and Possessed Raiders outside Makan Muqadas itself.
 
 
     **[NeCola]({{ site.baseurl }}/NeCola)**, the [Vatt'ghern]({{ site.baseurl }}/Vatt%27ghern), was dominant across every engagement, single-handedly carrying the offense. **[HiYun]({{ site.baseurl }}/HiYun)**, my Abyssal [Mage]({{ site.baseurl }}/Mage), secured a kill against the Necromancer's core and provided vital ranged support. **[Abanoub Ibn Mansur]({{ site.baseurl }}/Abanoub%20Ibn%20Mansur)** survived his debut despite taking a brutal beating that nearly ended him early.

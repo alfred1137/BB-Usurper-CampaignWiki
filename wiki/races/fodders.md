@@ -1,7 +1,7 @@
 ---
 title: "Fodders"
 layout: git-wiki-default
-category: Races
+category: [Races]({{ site.baseurl }}/Races)
 subcategory: Special Class
 published: true
 ---
@@ -14,15 +14,15 @@ Fodders are frequently marked with the Raven's Blessing or Curse to increase the
 
 ## Ascension to Undeath
 
-A unique aspect of service in The Usurper's Bane is that death is not always the end. Many fodders who fall in battle are reanimated as zombified thralls, continuing their service beyond the grave. Notable examples include:
+A unique aspect of service in [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane) is that death is not always the end. Many fodders who fall in battle are reanimated as zombified thralls, continuing their service beyond the grave. Notable examples include:
 
-* **Arnulf**: The "Walking Miracle" who served as an unliving shield for weeks.
+* **[Arnulf]({{ site.baseurl }}/Arnulf)**: The "Walking Miracle" who served as an unliving shield for weeks.
 * **Theudebald**: A vagabond who continued to march after his heart had stopped.
-* **Muyahid**: A shepherd who transitioned from living recruit to unliving thrall within a single day.
+* **[Muyahid]({{ site.baseurl }}/Muyahid)**: A shepherd who transitioned from living recruit to unliving thrall within a single day.
 
 ## Common Origins
 
-* **Fishermen**: Recruited from coastal towns like Stohl.
+* **Fishermen**: Recruited from coastal towns like [Stohl]({{ site.baseurl }}/Stohl).
 * **Refugees**: Desperate survivors of destroyed villages.
 * **Indebted**: Southern souls seeking to pay off generations of debt.
 * **Widows and Vagabonds**: Those with nowhere else to turn.

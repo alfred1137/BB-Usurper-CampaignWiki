@@ -1,14 +1,14 @@
 ---
 title: "Character Arc"
 layout: git-wiki-default
-category: Quests
+category: [Quests]({{ site.baseurl }}/Quests)
 subcategory: Character Arc
 published: true
 ---
 
-The personal journeys and transformations of the key members of The Usurper's Bane.
+The personal journeys and transformations of the key members of [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane).
 
 ## Major Arcs
 
-* **[The Ascension]({{ site.baseurl }}/The%20Ascension)**: The journey of [HiYun]({{ site.baseurl }}/HiYun) from scholar to Abyssal Mage.
-* **[Trial of the Grasses]({{ site.baseurl }}/Trial%20of%20the%20Grasses)**: The brutal mutation of [NeCola]({{ site.baseurl }}/NeCola) into a Vatt'ghern.
+* **[The Ascension]({{ site.baseurl }}/The%20Ascension)**: The journey of [HiYun]({{ site.baseurl }}/HiYun) from scholar to Abyssal [Mage]({{ site.baseurl }}/Mage).
+* **[Trial of the Grasses]({{ site.baseurl }}/Trial%20of%20the%20Grasses)**: The brutal mutation of [NeCola]({{ site.baseurl }}/NeCola) into a [Vatt'ghern]({{ site.baseurl }}/Vatt%27ghern).

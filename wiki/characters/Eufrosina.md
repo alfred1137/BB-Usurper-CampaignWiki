@@ -1,10 +1,10 @@
 ---
 title: "Eufrosina"
 layout: git-wiki-default
-category: Characters
+category: [Characters]({{ site.baseurl }}/Characters)
 subcategory: Party Member
 alias: "The Melon Mugger"
-affiliation: "The Usurper's Bane"
+affiliation: "[The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane)"
 is_dead: true
 avatar: "assets/images/a0ef9383-6ab3-456e-8bc4-a8cda7b01955.png"
 origin: "Melon Mugger"

@@ -1,7 +1,7 @@
 ---
 title: "Ohnemenschen"
 layout: git-wiki-default
-category: Locations
+category: [Locations]({{ site.baseurl }}/Locations)
 subcategory: Settlement
 published: false
 ---
@@ -11,4 +11,4 @@ Ohnemenschen is a small, quiet farming village that lives primarily off the surr
 ## Notable Events
 
 * **The Butcher's Offer**: A suspicious man known as "The Butcher" offered the company a large sum for a "favor," which was wisely declined as a potential trap.
-* **Recruitment of the Forgotten**: The company picked up several desperate souls here, including Hiltrude the Widow.
+* **Recruitment of the Forgotten**: The company picked up several desperate souls here, including [Hiltrude]({{ site.baseurl }}/Hiltrude) the Widow.

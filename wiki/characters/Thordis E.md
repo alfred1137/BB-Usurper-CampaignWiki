@@ -1,10 +1,10 @@
 ---
 title: "Thordis"
 layout: git-wiki-default
-category: Characters
+category: [Characters]({{ site.baseurl }}/Characters)
 subcategory: Party Member
 alias: "The Rescued Arbalester"
-affiliation: "The Usurper's Bane"
+affiliation: "[The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane)"
 is_dead: false
 avatar: "assets/images/a0d2f1a5-4cc6-496c-bae4-8f4a41d7e7a7.webp"
 origin: "Arbalester"

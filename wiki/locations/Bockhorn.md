@@ -1,12 +1,12 @@
 ---
 title: "Bockhorn"
 layout: git-wiki-default
-category: Locations
+category: [Locations]({{ site.baseurl }}/Locations)
 subcategory: Settlement
 published: true
 ---
 
-Bockhorn is a prosperous town located in the northern regions. It is a place of wet stone and woodsmoke, serving as a hub for councilmen and wealthy merchants. The town's economy is often bolstered by the trophies and loot brought back by companies like The Usurper's Bane.
+Bockhorn is a prosperous town located in the northern regions. It is a place of wet stone and woodsmoke, serving as a hub for councilmen and wealthy merchants. The town's economy is often bolstered by the trophies and loot brought back by companies like [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane).
 
 ## Notable Events
 

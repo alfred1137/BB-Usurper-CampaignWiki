@@ -1,7 +1,7 @@
 ---
 title: "Ka-Sabar"
 layout: git-wiki-default
-category: Locations
+category: [Locations]({{ site.baseurl }}/Locations)
 subcategory: Settlement
 published: false
 ---
@@ -10,5 +10,5 @@ Ka-Sabar, known as "The Gilded Pearl," is a prominent southern City-State. It is
 
 ## Notable Events
 
-* **Arrival in the South**: The company first reached the southern city-states by sailing to Ka-Sabar from Stohl.
+* **Arrival in the South**: The company first reached the southern city-states by sailing to Ka-Sabar from [Stohl]({{ site.baseurl }}/Stohl).
 * **Gilded Laws**: The company navigated the complex social and religious structures of the city while seeking work in the surrounding desert.

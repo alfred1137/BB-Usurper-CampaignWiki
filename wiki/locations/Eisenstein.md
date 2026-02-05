@@ -1,7 +1,7 @@
 ---
 title: "Eisenstein"
 layout: git-wiki-default
-category: Locations
+category: [Locations]({{ site.baseurl }}/Locations)
 subcategory: Settlement
 published: false
 ---
@@ -10,6 +10,6 @@ Eisenstein is an industrial settlement carved directly into the slopes of the su
 
 ## Notable Events
 
-* **The Birthday Blunder**: A contract to hunt "monstrous" beasts ended with HiYun flinging a giant spider corpse into the village headman's birthday party.
+* **The Birthday Blunder**: A contract to hunt "monstrous" beasts ended with [HiYun]({{ site.baseurl }}/HiYun) flinging a giant spider corpse into the village headman's birthday party.
 * **The Staff of Foresight**: The company retrieved a holy relic for a druidic monk from the ghost-infested Ruins of Blackwatch Keep.
 * **The Unholy Alliance**: A desperate battle against a pack of 14 Webknechts and an Ancient Champion took place in the woods just outside the town.

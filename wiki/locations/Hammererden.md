@@ -1,7 +1,7 @@
 ---
 title: "Hammererden"
 layout: git-wiki-default
-category: Locations
+category: [Locations]({{ site.baseurl }}/Locations)
 subcategory: Settlement
 published: true
 ---
@@ -10,5 +10,5 @@ Hammererden is a town of industry, defined by the constant smell of coal smoke a
 
 ## Notable Events
 
-* **The Anatomist's Den**: A site of a gruesome investigation where the company traded Bardol's physical integrity for a pulsing Unhold's Heart.
+* **The Anatomist's Den**: A site of a gruesome investigation where the company traded [Bardol]({{ site.baseurl }}/Bardol)'s physical integrity for a pulsing Unhold's Heart.
 * **The Grim Tombs Discovery**: A scouting mission that led the company to the ancient and stagnant site of the Grim Tombs in the Skauna region.

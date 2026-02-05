@@ -20,17 +20,17 @@ The banner of the Usurper’s Bane hung limp in the stagnant air of Ravens' Town
 
 
 
-    This world is sustained by consuming the remains of its failures. We eat the remains of our enemies to grow stronger; we loot the dead to pay for the living. I recruited a refugee named **Dauid** on the march—a man who had seen his village burned to ash and had nothing left but his skin. I saw the fear in his eyes when he looked at [Wilfried]({{ site.baseurl }}/Wilfried), but he joined nonetheless. He is another vessel, another piece of fodder to be thrown into the gears of my conquest. I wonder if he realizes that his ‘survival’ is merely a temporary lease granted by my curiosity.
+    This world is sustained by consuming the remains of its failures. We eat the remains of our enemies to grow stronger; we loot the dead to pay for the living. I recruited a refugee named **[Dauid]({{ site.baseurl }}/Dauid)** on the march—a man who had seen his village burned to ash and had nothing left but his skin. I saw the fear in his eyes when he looked at [Wilfried]({{ site.baseurl }}/Wilfried), but he joined nonetheless. He is another vessel, another piece of fodder to be thrown into the gears of my conquest. I wonder if he realizes that his ‘survival’ is merely a temporary lease granted by my curiosity.
 
 
 
-    ## The burning sands of Ka-Sabar
+    ## The burning sands of [Ka-Sabar]({{ site.baseurl }}/Ka-Sabar)
 
-    By the midday of Day 13, the biting winds of the North were a distant memory, replaced by the salt-heavy, sweltering heat of the Southern City-States. We had paid the gold to sail across the sea, trading the mud of [Stohl]({{ site.baseurl }}/Stohl) for the shimmering, deceptive sands of Ka-Sabar. The sudden change felt brutal. The Gilder-worshipping southerners looked at my green skin and spectral warriors with dread and suspicion. Ka-Sabar itself was a disappointment; the economy was stagnant, and the Viziers were too busy counting their gold to offer a contract worthy of the Usurper's Bane.
+    By the midday of Day 13, the biting winds of the North were a distant memory, replaced by the salt-heavy, sweltering heat of the Southern City-States. We had paid the gold to sail across the sea, trading the mud of [Stohl]({{ site.baseurl }}/Stohl) for the shimmering, deceptive sands of [Ka-Sabar]({{ site.baseurl }}/Ka-Sabar). The sudden change felt brutal. The Gilder-worshipping southerners looked at my green skin and spectral warriors with dread and suspicion. [Ka-Sabar]({{ site.baseurl }}/Ka-Sabar) itself was a disappointment; the economy was stagnant, and the Viziers were too busy counting their gold to offer a contract worthy of the Usurper's Bane.
 
 
 
-    We pushed onward toward [Ras Karim]({{ site.baseurl }}/Ras%20Karim), the sun a relentless hammer beating down on the armor of my men. The heat was an enemy we could not strike. I watched as Dauid and the other fodder struggled, their breath coming in ragged gasps. I grew cold with annoyance. These men were becoming soft under the gaze of the Gilder. To break the dull monotony, I found a target in the dunes: a lone hyena, a scavenger that had been tailing us for miles. I ordered the company to halt. I wanted entertainment, a distraction.
+    We pushed onward toward [Ras Karim]({{ site.baseurl }}/Ras%20Karim), the sun a relentless hammer beating down on the armor of my men. The heat was an enemy we could not strike. I watched as [Dauid]({{ site.baseurl }}/Dauid) and the other fodder struggled, their breath coming in ragged gasps. I grew cold with annoyance. These men were becoming soft under the gaze of the Gilder. To break the dull monotony, I found a target in the dunes: a lone hyena, a scavenger that had been tailing us for miles. I ordered the company to halt. I wanted entertainment, a distraction.
 
 
 
@@ -40,7 +40,7 @@ The banner of the Usurper’s Bane hung limp in the stagnant air of Ravens' Town
 
     ## The butcher's bill in the dunes
 
-    The fight lasted five agonizing rounds. What I had intended as training became a charnel house. [Arnulf]({{ site.baseurl }}/Arnulf), the faithful zombie who had survived the Northern Champion and the Geists, was finally undone. The hyena’s jaws closed around his throat, and for the first time, the zombie did not rise. [Evett]({{ site.baseurl }}/Evett) the Rabbit, another of my zombified vanguard, was shredded into unrecognisable ribbons of meat. They met their final death in the most ignoble of ways—at the teeth of a common scavenger. [Bardol]({{ site.baseurl }}/Bardol), Dauid, and [Jan]({{ site.baseurl }}/Jan) the Bright were struck down, their bodies a collection of fresh, permanent injuries that would haunt them for the rest of their short lives.
+    The fight lasted five agonizing rounds. What I had intended as training became a charnel house. [Arnulf]({{ site.baseurl }}/Arnulf), the faithful zombie who had survived the Northern Champion and the Geists, was finally undone. The hyena’s jaws closed around his throat, and for the first time, the zombie did not rise. [Evett]({{ site.baseurl }}/Evett) the Rabbit, another of my zombified vanguard, was shredded into unrecognisable ribbons of meat. They met their final death in the most ignoble of ways—at the teeth of a common scavenger. [Bardol]({{ site.baseurl }}/Bardol), [Dauid]({{ site.baseurl }}/Dauid), and [Jan]({{ site.baseurl }}/Jan) the Bright were struck down, their bodies a collection of fresh, permanent injuries that would haunt them for the rest of their short lives.
 
 
 
@@ -58,7 +58,7 @@ The banner of the Usurper’s Bane hung limp in the stagnant air of Ravens' Town
 
 
 
-    The Usurper is waiting, but the desert was the first wall I had to breach. I look at Dauid, the survivor who is now a broken man, and I wonder who will be the next to feed the birds. The Raven God is laughing, I can hear it in the wind that howls across the dunes. Next, we shall enter the Arena of [Ras Karim]({{ site.baseurl }}/Ras%20Karim), where blood is the only currency that matters. Will my "injury collectors" find glory in the pits, or will the desert finish what the hyena started?
+    The Usurper is waiting, but the desert was the first wall I had to breach. I look at [Dauid]({{ site.baseurl }}/Dauid), the survivor who is now a broken man, and I wonder who will be the next to feed the birds. The Raven God is laughing, I can hear it in the wind that howls across the dunes. Next, we shall enter the [Arena]({{ site.baseurl }}/Arena) of [Ras Karim]({{ site.baseurl }}/Ras%20Karim), where blood is the only currency that matters. Will my "injury collectors" find glory in the pits, or will the desert finish what the hyena started?
 
 
 
@@ -83,4 +83,4 @@ The banner of the Usurper’s Bane hung limp in the stagnant air of Ravens' Town
         * [Arnulf]({{ site.baseurl }}/Arnulf) F (Zombie): KIA. Met final death in the dunes.
         * [Evett]({{ site.baseurl }}/Evett) E (Zombie): KIA. Met final death in the dunes.
 
-  [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane) reaches [Ras Karim]({{ site.baseurl }}/Ras%20Karim) with a shattered line. With the Arena looming, will the "indestructible" survivors find their end in the pits, or will a new source of power emerge from the southern heat?
+  [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane) reaches [Ras Karim]({{ site.baseurl }}/Ras%20Karim) with a shattered line. With the [Arena]({{ site.baseurl }}/Arena) looming, will the "indestructible" survivors find their end in the pits, or will a new source of power emerge from the southern heat?

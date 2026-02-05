@@ -1,10 +1,10 @@
 ---
 title: "Lady Amelia"
 layout: git-wiki-default
-category: Characters
+category: [Characters]({{ site.baseurl }}/Characters)
 subcategory: Party Member
 alias: "The Swordmaster"
-affiliation: "The Usurper's Bane"
+affiliation: "[The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane)"
 is_dead: false
 avatar: "assets/images/a0d2f1a5-4cc6-496c-bae4-8f4a41d7e7a7.webp"
 origin: "Swordmaster"
@@ -14,7 +14,7 @@ published: false
 
 ## Description
 
-Lady Amelia is a Swordmaster of legendary status, considered one of the most dangerous swordswomen to have ever lived. Driven by the murder of her family, she dedicated her life to mastering the blade, eventually turning the art of swordfighting into pure mathematics. Though robbed of her peak athleticism by age and scars, her peerless knowledge allows her to dismantle even the most monstrous foes with surgical precision. She joined the company in Kochendorf, providing an elite martial edge to the frontline.
+Lady Amelia is a Swordmaster of legendary status, considered one of the most dangerous swordswomen to have ever lived. Driven by the murder of her family, she dedicated her life to mastering the blade, eventually turning the art of swordfighting into pure mathematics. Though robbed of her peak athleticism by age and scars, her peerless knowledge allows her to dismantle even the most monstrous foes with surgical precision. She joined the company in [Kochendorf]({{ site.baseurl }}/Kochendorf), providing an elite martial edge to the frontline.
 
 ## Notable Record
 

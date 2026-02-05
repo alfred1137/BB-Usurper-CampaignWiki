@@ -1,12 +1,12 @@
 ---
 title: "Holnisland"
 layout: git-wiki-default
-category: Locations
+category: [Locations]({{ site.baseurl }}/Locations)
 subcategory: Settlement
 published: true
 ---
 
-Holnisland is a coastal settlement located west of Hammererden. It is a smaller village that feels "heavy" with the scent of the sea and rot. Surrounded by dense, ancient woodlands, it is a place where the barrier between the mundane and the supernatural often feels thin.
+Holnisland is a coastal settlement located west of [Hammererden]({{ site.baseurl }}/Hammererden). It is a smaller village that feels "heavy" with the scent of the sea and rot. Surrounded by dense, ancient woodlands, it is a place where the barrier between the mundane and the supernatural often feels thin.
 
 ## Notable Events
 

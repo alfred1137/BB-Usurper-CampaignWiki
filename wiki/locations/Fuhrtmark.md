@@ -1,7 +1,7 @@
 ---
 title: "Fuhrtmark"
 layout: git-wiki-default
-category: Locations
+category: [Locations]({{ site.baseurl }}/Locations)
 subcategory: Settlement
 published: false
 ---
