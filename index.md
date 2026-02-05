@@ -22,14 +22,15 @@ The **Rise of the Usurper (RotU)** and **Path of the Vatt'ghern (PoV)** story fo
 
 Gameplay is organised by sessions. Each session is then documented as a journal entry.
 
+<p><a href="{{ '/CampaignJournals/' | relative_url }}">View all journals →</a></p>
+
 ### Recent Entries
+
 <ul>
 {% for post in site.posts limit:5 %}
   <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> ({{ post.date | date: "%-d %B %Y" }})</li>
 {% endfor %}
 </ul>
-
-<p><a href="{{ '/Campaign%20Journals' | relative_url }}">View all journals →</a></p>
 
 ---
 
@@ -63,3 +64,9 @@ The Witcher-inspired mutations and specialized companion origins (such as [NeCol
 
 * [PoV Public on Github](https://github.com/TheBlueTemplar/Path_Of_The_Vattghern_Public)
 * [TheBlueTemplar's Discord](https://discord.com/invite/zhHTjM5bBB)
+
+---
+
+<p style="text-align: center; font-size: 12px; color: var(--ctp-main-subtext0);">
+  Vectors and icons by <a href="https://www.svgrepo.com" target="_blank">SVG Repo</a>
+</p>
