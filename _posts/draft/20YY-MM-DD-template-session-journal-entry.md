@@ -8,16 +8,17 @@ published: false
 
 main body goes here
 
-
 ---
 
 <table border="0">
   <tr>
     <td>⏏️ Return to catalogue</td>
-    <td>➡️ Read next chatper</td>
+    <td>|</td>
+    <td style="text-align: right;">➡️ Read next chatper</td>
   </tr>
   <tr>
     <td>Campaign Jounrals</td>
-    <td>NEXT</td>
+    <td>|</td>
+    <td style="text-align: right;">NEXT</td>
   </tr>
 </table>

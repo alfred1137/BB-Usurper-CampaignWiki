@@ -1,5 +1,5 @@
 ---
-title: "Bro Template"
+title: "BRO TEMPLATE"
 layout: git-wiki-default
 ---
 

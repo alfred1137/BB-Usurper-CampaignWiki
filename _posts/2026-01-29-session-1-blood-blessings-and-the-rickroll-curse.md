@@ -97,10 +97,12 @@ As Day 2 drew to a close, we sat by the fire, the Unhold’s Heart thumping in m
 <table border="0">
   <tr>
     <td>⏏️ Return to catalogue</td>
-    <td>➡️ Read next chatper</td>
+    <td>|</td>
+    <td style="text-align: right;">➡️ Read next chatper</td>
   </tr>
   <tr>
     <td>Campaign Jounrals</td>
-    <td>Session 2: Of Tombs and Tainted Crowns</td>
+    <td>|</td>
+    <td style="text-align: right;">Session 2: Of Tombs and Tainted Crowns</td>
   </tr>
 </table>

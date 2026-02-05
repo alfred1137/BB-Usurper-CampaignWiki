@@ -13,13 +13,19 @@ The project has transitioned from a remote Jekyll theme to a locally internalize
   - Removed unused Frappe and Mocha definitions from `_sass/_catppuccin.scss` to reduce size.
   - Removed redundant `assets/css/catppuccin.css` file.
   - Centralized theme switching logic in `_includes/custom_style.html`.
-- **Layout & Typography Improvements (2026-02-04):**
-  - **Sidebar:** Refactored for better hierarchy. Increased title size/weight, added clear section headers for Pages, Posts, and Menu (Edit), and improved spacing.
-  - **Top Bar:** Transformed action links (Add, Edit, Delete, etc.) into prominent button-style elements with interactive states.
-  - **Search Bar:** Increased size and prominence, adding focus animations and better rounding.
-  - **Table of Contents:** Redesigned as a clear, standalone container with a distinct header and improved list styling.
-  - **Headings & Body:** Significantly increased font sizes and weights for H1 and H2. Improved body text readability by increasing base font size to 16px and line height to 1.7.
-  - **Footer:** Left-aligned footer text to match the main content alignment and added a top border for separation.
+- **Layout Overhaul (2026-02-05):**
+  - **3-Column Grid:** Migrated from a 2-column layout to a modern 3-column grid:
+    - **Fixed Sidebar (300px):** Full-height fixed navigation.
+    - **Main Content (1fr):** Flexible center column for readability.
+    - **Right Column (300px):** New column for metadata (Page Information) and Table of Contents (TOC).
+  - **Search Bar:** Expanded to full width of the main content area for better usability. Improved dropdown styling and resolved a "strange line" issue caused by the empty search results border.
+  - **Page Actions:** Moved action buttons (Edit, History, etc.) to the right-hand metadata column, aligning them to the right.
+- **Technical Environment Fixes (2026-02-05):**
+  - **UTF-8 Enforcement:** Fixed Sass compilation errors by strictly enforcing UTF-8 encoding in `Dockerfile.github` and `_config.yml`.
+  - **Build Performance:** Configured `exclude` in `_config.yml` to skip non-content directories (`.agent`, `.log`, `scripts`, etc.), significantly speeding up Jekyll generation.
+- **Content Improvements:**
+  - **Index Redirect:** Added `index.md` in the root with a JS redirect to the main Campaign Chronicle to avoid directory index listings.
+  - **Markdown Fixes:** Corrected malformed headers (e.g., `## Journals`) in the main chronicle post.
 - **Link Management Overhaul (2026-02-04):**
   - **Broken Link Fix:** Resolved a major issue where filesystem-relative links (e.g., `../wiki/path/to/Entity.md`) were breaking due to Jekyll's permalink structure.
   - **New Linking Strategy:** Transitioned to a robust Jekyll-compatible format: `[Name]({{ site.baseurl }}/Basename)`. This format works consistently across all pages, regardless of their directory depth.

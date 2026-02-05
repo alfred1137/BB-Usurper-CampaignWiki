@@ -12,7 +12,9 @@
 - **Resolved:** Major issue with broken filesystem-relative links fixed across the entire wiki and blog.
 - **Resolved:** Blog post images fixed by renaming `assets/_posts` to `assets/posts` (avoiding Jekyll's underscore ignore rule).
 - **Visual Style:** Catppuccin theme (Latte/Macchiato) fully integrated and enforced.
-- **Layout & Typography:** Comprehensive overhaul of sidebar hierarchy, top-bar action prominence, search bar visibility, TOC styling, and general readability.
+- **Layout Overhaul:** Migrated to a modern 3-column grid with a fixed sidebar, centered main content, and a right-hand metadata/TOC column.
+- **Search Bar:** Implemented a full-width search bar with high-quality dropdown results and resolved empty-container border glitches.
+- **Build Optimization:** Resolved UTF-8 encoding issues and optimized build speed by excluding irrelevant directories.
 
 ## What's Left to Build
 

@@ -22,7 +22,7 @@ mandate:
 
 I must find the [The Usurper King]({{ site.baseurl }}/The%20Usurper%20King), a rogue demon lord who has betrayed the god of death, [Davkul]({{ site.baseurl }}/Davkul), and is currently mutating the land with a "Chaos Plague".
 
-This world is gritty. [Human]({{ site.baseurl }}/Human) life is cheap and magic is a rare, terrifying force. To navigate this "Tainted World," I am not alone. 
+This world is gritty. [Human]({{ site.baseurl }}/Human) life is cheap and magic is a rare, terrifying force. To navigate this "Tainted World," I am not alone.
 
 [NeCola]({{ site.baseurl }}/NeCola) was spared from the ritual due to our deep connection with each other.
 
@@ -40,10 +40,12 @@ Our path is dark, and the stakes are absolute: if I fall, the mandate fails. We 
 <table border="0">
   <tr>
     <td>⏏️ Return to catalogue</td>
-    <td>➡️ Read next chatper</td>
+    <td>|</td>
+    <td style="text-align: right;">➡️ Read next chatper</td>
   </tr>
   <tr>
     <td>Campaign Jounrals</td>
-    <td>Session 1: Blood, Blessings, and the Rickroll Curse</td>
+    <td>|</td>
+    <td style="text-align: right;">Session 1: Blood, Blessings, and the Rickroll Curse</td>
   </tr>
 </table>
