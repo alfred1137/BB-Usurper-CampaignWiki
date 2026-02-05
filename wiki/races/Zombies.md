@@ -34,3 +34,13 @@ Everybody knows of magic and wizards, dark arts and the like. The Necromancer is
 ## Geist
 
 Geist (german for spirit/ghost) can make quick work of their enemys resolve and always deal damage to HP rendering armor useless against them. A good Sergeant is very helpful against them.
+
+
+# Zombified Mercenaries
+
+In the service of [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane), death is not always the end. Through the Abyssal arts of [HiYun]({{ site.baseurl }}/HiYun) or the lingering effects of the **Chaos Plague**, fallen brothers are sometimes reanimated as zombified thralls. These unliving warriors serve as tireless anchors for the company's frontline, absorbing punishment that would destroy the living.
+
+Notable zombified members include:
+* **Arnulf**: Known as the "Walking Miracle," he served for weeks as a silent shield.
+* **Theudebald**: A vagabond who transitioned into a Wiederganger after a battle with geists.
+* **Muyahid**: A shepherd who became a zombie after being cleaved by an orc.

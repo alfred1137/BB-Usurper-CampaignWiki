@@ -6,7 +6,17 @@ subcategory: Mercenary Company
 published: true
 ---
 
-The Company of the main characters.
+The Usurper's Bane is a mercenary company led by the Abyssal Mage, HiYun, and his lieutenant, NeCola the Vatt'ghern. Founded on the outskirts of the Southern Wilds with a handful of desperate fishermen, the company has grown into a formidable regional power with a mission to topple the Usurper King and purge his chaotic influence from the world.
+
+## History
+
+The company began as a ragtag group of "fodder" recruits, often marked by the Raven's Blessing to increase their durability. Through a series of brutal contracts and supernatural encounters, the group hardened into a true fighting force. They have conquered northern champions, survived southern arenas, and successfully navigated the madness of the Chaos Plague.
+
+## Notable Achievements
+
+* **Champion Slayers**: Defeated legendary foes like Bakh Lob the Boil Burster and Borealis the Primal.
+* **The Company Standard**: Officially raised a banner in the northern hills, signaling their transition from wandering vagabonds to a professional outfit.
+* **Mastery of the Trial**: Successfully guided NeCola through the Trial of the Grasses and began experimenting with advanced mutations like the Geist Mutagen.
 
 ## Company Members
 

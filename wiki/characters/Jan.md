@@ -7,18 +7,20 @@ alias: "The Bright"
 affiliation: "The Usurper's Bane"
 is_dead: true
 avatar: "assets/images/a0ef9321-9a8c-4f13-87bb-597585620806.png"
-published: true
-origin: "[Background]"
-role: "[Frontline / Backline / Support]"
+origin: "Apprentice"
+role: "Frontline Fodder"
+published: false
 ---
 
-### Description
-[Add character history and personality here]
+## Description
 
-### Combat Record
-* **Kills**: 0
-* **Injuries**: None
-* **Notable Feats**: [Add notable achievements]
+Jan was an impatient student of a Swordmaster who lacked the mental aptitude for traditional training but made up for it with sheer effort. Recruited in Fuhrtmark, he was dubbed "The Bright" for his enthusiasm. Despite being designated as fodder, he survived multiple meat-grinders and absorbed staggering amounts of punishment, becoming more scar tissue than man. His light finally flickered out in the desert during a confrontation with a Necromancer.
 
-### Memberships
+## Notable Record
+
+* **Swordmaster's Rejection**: Joined the company after failing to stick with traditional martial trials.
+* **Indestructible Fodder**: Survived multiple battles despite sustaining near-lethal injuries (over 170 HP damage in one instance).
+
+## Memberships
+
 * [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane): Member

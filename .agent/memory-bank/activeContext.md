@@ -4,6 +4,12 @@ The project has transitioned from a remote Jekyll theme to a locally internalize
 
 ## Recent Changes
 
+- **Revert (2026-02-05):** Reverted project state to commit `6a32642` to undo subsequent changes.
+- **Log Conversion (2026-02-05):** Converted `session-10-log.html` to Markdown.
+- **Character Population (2026-02-05):**
+  - Created `scripts/populate_characters.py` to scan campaign logs and automatically generate character pages.
+  - Successfully populated 14 missing character entities (e.g., `Maike`, `Lady Amelia A`, `Thordis E`) using the `99 Bro Template.md`.
+- **Bulk Character Update (2026-02-05):** Applied the updated `99 Bro Template.md` structure (Headers, Notable Record) to all character files (excluding specialized ones like `HiYun.md` and `NeCola.md`), while preserving custom descriptions where present.
 - **Theme Internalization:** Disconnected `remote_theme` and copied essential theme files (`_layouts`, `_includes`, `_sass`, `assets`) locally.
 - **Catppuccin Integration:**
   - Created `_sass/_catppuccin.scss` with CSS variables.
@@ -29,7 +35,7 @@ The project has transitioned from a remote Jekyll theme to a locally internalize
 - **Link Management Overhaul (2026-02-04):**
   - **Broken Link Fix:** Resolved a major issue where filesystem-relative links (e.g., `../wiki/path/to/Entity.md`) were breaking due to Jekyll's permalink structure.
   - **New Linking Strategy:** Transitioned to a robust Jekyll-compatible format: `[Name]({{ site.baseurl }}/Basename)`. This format works consistently across all pages, regardless of their directory depth.
-  - **Script Updates:** 
+  - **Script Updates:**
     - Updated `scripts/apply_links.py` to automatically fix existing broken links and apply new ones using the new format, while protecting other links from double-nesting.
     - Updated `scripts/scan_links.py` to report potential links in the new format.
   - **Workflow Sync:** Updated `.agent/workflows/scan-wiki-links.md` to document the new linking convention.

@@ -7,20 +7,20 @@ alias: "False God-King"
 affiliation: "Chaos"
 is_dead: false
 avatar: "assets/images/a0d2d3dc-0a8a-42b1-9258-ad442423c7ae.jpg"
-published: true
 origin: "Demon Lord"
 role: "Final Boss"
+published: true
 ---
 
-### Description
-A rogue demon lord who has betrayed the god of death (Davkul) and is spreading a "Chaos Plague" and mutating the world.
+## Description
 
-### Combat Record
-* **Kills**: Countless
-* **Injuries**: None
-* **Notable Feats**: Built a 19-floor stronghold.
+The Usurper King is a rogue demon lord who has betrayed the god of death (Davkul) and is spreading a "Chaos Plague" across the land. He sits upon a throne built of lies and stolen blood, mutating the world and its inhabitants to suit his dark vision. He is the ultimate target of HiYun and NeCola's quest, though his influence is felt in every corner of the world, from the sentient vines of the south to the possessed warriors of the north.
 
-### Memberships
-* Chaos: Leader
+## Notable Record
 
+* **Traitor to Death**: Betrayed the god Davkul to seize power for himself.
+* **Architect of Mutation**: Responsible for the chaotic changes and the rising tide of abominations plaguing the realm.
 
+## Memberships
+
+* [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane): Ultimate Enemy

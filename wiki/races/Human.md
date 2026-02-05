@@ -117,3 +117,13 @@ Human Factions and Units, including non-humans appearing with them.
 
 
         Elite enemies that are among them can be problematic by themselves.
+
+
+    
+
+    
+        ## Possessed
+
+        The Possessed are humans whose minds have been hollowed out and filled with the dark influence of the Usurper King. They often appear as leaders or elite members of brigand warbands, exhibiting unnatural strength and a complete disregard for pain.
+
+        They are fanatic warriors who speak to bones and wear madness like a crown. In battle, they are particularly dangerous due to their high resolve and their tendency to lead mobs of lesser brigands and undead alike.

@@ -12,14 +12,14 @@ role: "[Frontline / Backline / Support]"
 published: false
 ---
 
-### Description
+## Description
+
 [Add character history and personality here]
 
-### Combat Record
-* **Kills**: 0
-* **Injuries**: None
-* **Notable Feats**: [Add notable achievements]
+## Notable Record
 
-### Memberships
+* [interesting facts about the character here]
+
+## Memberships
+
 * [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane): Member
-
