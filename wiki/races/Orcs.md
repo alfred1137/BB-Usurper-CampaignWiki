@@ -3,6 +3,7 @@ title: "Orcs"
 layout: git-wiki-default
 category: Races
 subcategory: Greenskin
+published: true
 ---
 
 ![Orcs]({{ site.baseurl }}/assets/images/a0d34e6e-6524-46fb-9aab-1536b0227fca.webp)

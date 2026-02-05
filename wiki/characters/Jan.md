@@ -7,6 +7,7 @@ alias: "The Bright"
 affiliation: "The Usurper's Bane"
 is_dead: true
 avatar: "assets/images/a0ef9321-9a8c-4f13-87bb-597585620806.png"
+published: true
 ---
 
 ![Jan]({{ site.baseurl }}/assets/images/a0ef9321-9a8c-4f13-87bb-597585620806.png)

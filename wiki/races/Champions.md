@@ -3,6 +3,7 @@ title: "Champions"
 layout: git-wiki-default
 category: Races
 subcategory: Unique
+published: true
 ---
 
 ![Champions]({{ site.baseurl }}/assets/images/a0d34e3f-08e6-44ff-9950-d6a82447ecbf.webp)

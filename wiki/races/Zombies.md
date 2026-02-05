@@ -3,6 +3,7 @@ title: "Zombies"
 layout: git-wiki-default
 category: Races
 subcategory: Undead
+published: true
 ---
 
 ![Zombies]({{ site.baseurl }}/assets/images/a0d34e89-1483-489d-b472-0ebbe56859b4.webp)

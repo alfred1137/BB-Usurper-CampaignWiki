@@ -2,6 +2,7 @@
 title: "Session 1: Blood, Blessings, and the Rickroll Curse"
 layout: git-wiki-post
 type: Session
+published: true
 ---
 
 The Abyss is not merely a place; it is a hunger. It moved within my marrow as I, ([HiYun]({{ site.baseurl }}/HiYun)), watched [NeCola]({{ site.baseurl }}/NeCola) convulse upon the frost-nipped grass outside the village of [Stohl]({{ site.baseurl }}/Stohl). [Trial of the Grasses]({{ site.baseurl }}/Trial%20of%20the%20Grasses) had not been kind.

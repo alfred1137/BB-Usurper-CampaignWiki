@@ -1,6 +1,7 @@
 ---
 title: "Characters"
 layout: git-wiki-default
+published: true
 ---
 
 # Characters

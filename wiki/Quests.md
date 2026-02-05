@@ -1,6 +1,7 @@
 ---
 title: "Quests"
 layout: git-wiki-default
+published: true
 ---
 
 # Quests

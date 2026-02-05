@@ -7,6 +7,7 @@ alias: "The Fodder"
 affiliation: "The Usurper's Bane"
 is_dead: true
 avatar: "assets/images/a0ef2eec-b06c-48aa-bf26-797f06e6a76e.png"
+published: true
 ---
 
 ![Ingald]({{ site.baseurl }}/assets/images/a0ef2eec-b06c-48aa-bf26-797f06e6a76e.png)

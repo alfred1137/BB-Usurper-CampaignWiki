@@ -7,6 +7,7 @@ alias: "The Abyssal Mage"
 affiliation: "The Usurper's Bane"
 is_dead: false
 avatar: "assets/images/a0d2cd5d-ed8a-46d0-abee-d1f2e88913cf.png"
+published: true
 ---
 
 ![HiYun]({{ site.baseurl }}/assets/images/a0d2cd5d-ed8a-46d0-abee-d1f2e88913cf.png)

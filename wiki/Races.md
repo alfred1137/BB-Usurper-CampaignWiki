@@ -1,6 +1,7 @@
 ---
 title: "Races"
 layout: git-wiki-default
+published: true
 ---
 
 # Races and Classes

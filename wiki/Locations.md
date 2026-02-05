@@ -1,6 +1,7 @@
 ---
 title: "Locations"
 layout: git-wiki-default
+published: true
 ---
 
 # Locations

@@ -3,6 +3,7 @@ title: "Trial of the Grasses"
 layout: git-wiki-default
 category: Quests
 subcategory: Character Arc
+published: true
 ---
 
 **Type**: [Character Arc]({{ site.baseurl }}/Character%20Arc)

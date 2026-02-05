@@ -1,6 +1,7 @@
 ---
 title: "Organisations"
 layout: git-wiki-default
+published: true
 ---
 
 # Organisations

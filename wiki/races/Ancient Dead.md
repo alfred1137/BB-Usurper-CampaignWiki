@@ -3,6 +3,7 @@ title: "Ancient Dead"
 layout: git-wiki-default
 category: Races
 subcategory: Undead
+published: true
 ---
 
 ![Ancient Dead]({{ site.baseurl }}/assets/images/a0d34df6-2367-41c6-a3c6-e36ec3b9fe1e.webp)
