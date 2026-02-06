@@ -2,7 +2,7 @@
 title: "Session 2: Of Tombs and Tainted Crowns"
 layout: git-wiki-post
 type: Session
-published: true
+published: false
 ---
 
 We marched back to [Hammererden]({{ site.baseurl }}/Hammererden) through a landscape that felt increasingly skeletal, the trees clawing t a leaden sky as if trying to pull the stars down into the muck. [NeCola]({{ site.baseurl }}/NeCola) walked beside me, her breath misting in the cold air. Although the sickness of the Grasses still makes her movements sluggish, her predatory grace hampered by the tremors of her rewiring biology.

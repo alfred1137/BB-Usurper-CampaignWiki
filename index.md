@@ -67,6 +67,16 @@ The Witcher-inspired mutations and specialized companion origins (such as [NeCol
 
 ---
 
-<p style="text-align: center; font-size: 12px; color: var(--ctp-main-subtext0);">
-  Vectors and icons by <a href="https://www.svgrepo.com" target="_blank">SVG Repo</a>
-</p>
+## Disclaimer about AI usage
+
+During the development of this site, its stories and graphics, I have used **Gemini** as both coding agent and AI-assisted editing tool.
+
+In the development of this site, **Gemini** was used to customise the Jekyll template (credits to its author in footer) to my preferred layout.
+
+In preparing the wiki entries and the campaign journal, **Gemini** was used to assist with the documentation of gameplay, and for spellchecking and formatting during creative writing. The graphics, except for the screenshot of the game, are created with Googles' image and video generation model - **Nano Banana** and **Veo 3.1**.
+
+This is a passion project with the objective to take the gameplay of Battle Brothers to a next level. I want to be able to look back at this Wiki years in the future and relive the thrill of the adventure.
+
+I hope you will enjoy it too.
+
+---
