@@ -1,55 +1,39 @@
 # Active Context
 
-The project has transitioned from a remote Jekyll theme to a locally internalized version of `git-wiki-theme`. This was done to fix dark mode glitches and properly integrate the Catppuccin color scheme.
+The project has undergone a massive content update, synchronizing the wiki with the campaign logs from Session 1 through Session 10.
 
 ## Recent Changes
 
-- **Revert (2026-02-05):** Reverted project state to commit `6a32642` to undo subsequent changes.
-- **Log Conversion (2026-02-05):** Converted `session-10-log.html` to Markdown.
-- **Character Population (2026-02-05):**
-  - Created `scripts/populate_characters.py` to scan campaign logs and automatically generate character pages.
-  - Successfully populated 14 missing character entities (e.g., `Maike`, `Lady Amelia A`, `Thordis E`) using the `99 Bro Template.md`.
-- **Bulk Character Update (2026-02-05):** Applied the updated `99 Bro Template.md` structure (Headers, Notable Record) to all character files (excluding specialized ones like `HiYun.md` and `NeCola.md`), while preserving custom descriptions where present.
-- **Theme Internalization:** Disconnected `remote_theme` and copied essential theme files (`_layouts`, `_includes`, `_sass`, `assets`) locally.
-- **Catppuccin Integration:**
-  - Created `_sass/_catppuccin.scss` with CSS variables.
-  - Modified `_sass/git-wiki-style.scss` to import Catppuccin variables and map them to theme elements (defaulting to Macchiato flavor).
-- **Theme Refinement:**
-  - Enforced strict usage of **Latte (Light)** and **Macchiato (Dark)** themes only.
-  - Removed unused Frappe and Mocha definitions from `_sass/_catppuccin.scss` to reduce size.
-  - Removed redundant `assets/css/catppuccin.css` file.
-  - Centralized theme switching logic in `_includes/custom_style.html`.
-- **Layout Overhaul (2026-02-05):**
-  - **3-Column Grid:** Migrated from a 2-column layout to a modern 3-column grid:
-    - **Fixed Sidebar (300px):** Full-height fixed navigation.
-    - **Main Content (1fr):** Flexible center column for readability.
-    - **Right Column (300px):** New column for metadata (Page Information) and Table of Contents (TOC).
-  - **Search Bar:** Expanded to full width of the main content area for better usability. Improved dropdown styling and resolved a "strange line" issue caused by the empty search results border.
-  - **Page Actions:** Moved action buttons (Edit, History, etc.) to the right-hand metadata column, aligning them to the right.
-- **Technical Environment Fixes (2026-02-05):**
-  - **UTF-8 Enforcement:** Fixed Sass compilation errors by strictly enforcing UTF-8 encoding in `Dockerfile.github` and `_config.yml`.
-  - **Build Performance:** Configured `exclude` in `_config.yml` to skip non-content directories (`.agent`, `.log`, `scripts`, etc.), significantly speeding up Jekyll generation.
-- **Content Improvements:**
-  - **Index Redirect:** Added `index.md` in the root with a JS redirect to the main Campaign Chronicle to avoid directory index listings.
-  - **Markdown Fixes:** Corrected malformed headers (e.g., `## Journals`) in the main chronicle post.
-- **Link Management Overhaul (2026-02-04):**
-  - **Broken Link Fix:** Resolved a major issue where filesystem-relative links (e.g., `../wiki/path/to/Entity.md`) were breaking due to Jekyll's permalink structure.
-  - **New Linking Strategy:** Transitioned to a robust Jekyll-compatible format: `[Name]({{ site.baseurl }}/Basename)`. This format works consistently across all pages, regardless of their directory depth.
-  - **Script Updates:**
-    - Updated `scripts/apply_links.py` to automatically fix existing broken links and apply new ones using the new format, while protecting other links from double-nesting.
-    - Updated `scripts/scan_links.py` to report potential links in the new format.
-  - **Workflow Sync:** Updated `.agent/workflows/scan-wiki-links.md` to document the new linking convention.
-- **Asset Management Fix (2026-02-04):**
-  - **Folder Rename:** Renamed `assets/_posts` to `assets/posts`. In Jekyll, folders starting with an underscore (outside the root) are ignored during build, causing images in blog posts to break.
-  - **Reference Update:** Updated all image links in `_posts` to point to `assets/posts`.
-  - **Convention:** Established that post-specific assets should live in `assets/posts` or `assets/images`, avoiding leading underscores in asset subdirectories.
-- **Fixes:**
-  - Removed `darkmode.js` integration to prevent conflicts with the new CSS-based theming.
-  - Replaced local font references with Google Fonts (Noto Sans) to avoid missing asset issues.
-  - Replaced missing local search script with a CDN link for `simple-jekyll-search`.
-- **Migration:** Kanka.io entities were previously migrated to Jekyll structure.
+- **Massive Wiki Population (2026-02-05):**
+  - Updated/created **30 character entities** and **18 location entities** based on campaign logs.
+  - Documents now include detailed histories, notable records, and role descriptions.
+- **Publication Management:**
+  - Implemented a "story-state" publication strategy.
+  - Entities appearing in Sessions 1 & 2 are set to `published: true` to align with current blog posts.
+  - Entities appearing in Sessions 3–10 are set to `published: false` to avoid spoilers for readers following the blog.
+- **Mobile UX/UI Optimization (2026-02-09):**
+  - Implemented a fixed mobile header for constant navigation access.
+  - Refactored the mobile sidebar into an overlay system (85% width) to improve content focus.
+  - Adjusted heading scales and increased touch targets for interactive elements.
+  - Added horizontal table scrolling to prevent layout breakage on narrow screens.
+  - All changes were scoped to mobile media queries to preserve the desktop 3-column layout.
+- **Automated Cross-Linking:**
+  - Executed `scripts/apply_links.py` across the entire codebase.
+  - Generated **255 internal links** using the `{{ site.baseurl }}/Basename` format.
+  - Verified that all characters, locations, quests, and races are correctly interconnected.
+- **Workflow Verification:**
+  - Reviewed and confirmed `.agent/workflows/scan-wiki-links.md` is compatible with the current Jekyll structure.
+- **Git Synchronization:**
+  - Staged, committed, and pushed all content and link updates to the remote repository.
+
+## Current State
+
+- The wiki is now a comprehensive knowledge base for the first 10 sessions of the campaign.
+- Navigation between related entities is seamless due to the automated linking.
+- The "hidden" content (Sessions 3-10) is ready for activation as the blog catches up.
 
 ## Next Steps
 
-- User verification of the new visual style and functionality.
-- Ongoing maintenance of wiki content and links.
+- Monitor blog post updates to toggle `published: true` for relevant entities.
+- Continue adding lore to race guides and quest logs as new info emerges.
+- Maintain links using `scripts/apply_links.py` after creating new content.

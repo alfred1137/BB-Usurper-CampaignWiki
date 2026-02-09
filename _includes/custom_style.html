@@ -627,24 +627,121 @@
 
   /* Mobile Adjustments for Layout Changes */
   @media (max-width: 992px) {
-    #git-wiki-sidebar {
-      position: relative !important;
+    /* Header Fixed */
+    #git-wiki-mobile-header {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
       width: 100% !important;
-      height: auto !important;
+      height: 60px !important;
+      z-index: 1001 !important;
+      background-color: var(--ctp-main-mantle) !important;
+      border-bottom: 1px solid var(--ctp-main-surface1) !important;
+      display: flex !important;
+      align-items: center;
+      padding: 0 15px !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
+    
+    /* Ensure sidebar toggle button is visible and tappable */
+    #git-wiki-mobile-header button {
+        background-color: transparent !important;
+        color: var(--ctp-main-text) !important;
+        font-size: 24px !important;
+        border: none !important;
+        padding: 10px !important;
+        margin-right: 15px !important;
+        cursor: pointer !important;
+    }
+
+    /* Sidebar Overlay */
+    #git-wiki-sidebar {
+      position: fixed !important;
+      top: 0 !important; /* Full height overlay */
+      left: 0 !important;
+      width: 85% !important;
+      max-width: 320px !important;
+      height: 100vh !important;
+      z-index: 1002 !important; /* Above header */
+      background-color: var(--ctp-main-base) !important;
+      border-right: 1px solid var(--ctp-main-surface1) !important;
+      box-shadow: 5px 0 15px rgba(0,0,0,0.3) !important;
+      padding: 60px 20px 20px 20px !important; /* Space for internal close button */
+      /* overflow-y: auto handled by w3-sidebar or generic styles */
+    }
+
+    /* Adjust the Close button inside sidebar to be more prominent */
+    #git-wiki-sidebar .w3-button.w3-large {
+        text-align: right !important;
+        width: 100% !important;
+        padding: 15px !important;
+        font-weight: bold !important;
+        color: var(--ctp-main-red) !important;
+        background-color: var(--ctp-main-mantle) !important;
+        border-bottom: 1px solid var(--ctp-main-surface1) !important;
+        /* Position it at the top */
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        z-index: 1003 !important;
+    }
+
+    /* Main Layout - Push down */
     .main-layout {
       grid-template-columns: 1fr;
-      margin-left: 0;
-      padding: 20px;
+      margin-left: 0 !important;
+      margin-top: 60px !important; /* Space for fixed header */
+      padding: 20px !important;
+      display: block !important;
     }
+    
+    .git-wiki-page {
+      padding-bottom: 0 !important;
+    }
+
+    /* Typography Scaling */
+    h1 {
+      font-size: 28px !important;
+      margin-top: 0.5em !important;
+      line-height: 1.2 !important;
+    }
+    
+    h2 {
+      font-size: 22px !important;
+      margin-top: 1.5em !important;
+    }
+
+    h3 {
+      font-size: 18px !important;
+    }
+
+    /* Footer */
     footer {
       margin-left: 0 !important;
       width: 100% !important;
-      padding-left: 20px !important;
-      padding-right: 20px !important;
+      padding: 30px 20px !important;
     }
+
+    /* Search & Tools */
     #search-input {
       width: 100% !important;
+      font-size: 16px !important; /* Prevent zoom on iOS */
+    }
+    
+    .git-wiki-tools {
+        justify-content: flex-start !important;
+        margin-top: 10px !important;
+    }
+    
+    .tools-element a {
+        padding: 10px 15px !important; /* Larger touch targets */
+    }
+    
+    /* Table scrolling */
+    table {
+        display: block !important;
+        overflow-x: auto !important;
+        white-space: nowrap !important;
     }
   }
 </style>
