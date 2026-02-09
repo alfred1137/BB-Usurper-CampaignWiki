@@ -78,11 +78,6 @@
   }
 
   /* Application of colors */
-  /* Universal background to catch everything */
-  * {
-    background-color: inherit;
-  }
-
   html {
     background-color: var(--ctp-main-bg) !important;
     min-height: 100vh;
@@ -640,7 +635,13 @@
       display: flex !important;
       align-items: center;
       padding: 0 15px !important;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    
+    #git-wiki-mobile-header a {
+      font-weight: 700 !important;
+      font-size: 18px !important;
+      letter-spacing: -0.02em !important;
     }
     
     /* Ensure sidebar toggle button is visible and tappable */
@@ -650,40 +651,51 @@
         font-size: 24px !important;
         border: none !important;
         padding: 10px !important;
-        margin-right: 15px !important;
+        margin-right: 10px !important;
         cursor: pointer !important;
     }
 
     /* Sidebar Overlay */
     #git-wiki-sidebar {
       position: fixed !important;
-      top: 0 !important; /* Full height overlay */
+      top: 0 !important;
       left: 0 !important;
       width: 85% !important;
       max-width: 320px !important;
       height: 100vh !important;
-      z-index: 1002 !important; /* Above header */
+      z-index: 1100 !important; /* Above everything */
       background-color: var(--ctp-main-base) !important;
       border-right: 1px solid var(--ctp-main-surface1) !important;
-      box-shadow: 5px 0 15px rgba(0,0,0,0.3) !important;
-      padding: 60px 20px 20px 20px !important; /* Space for internal close button */
-      /* overflow-y: auto handled by w3-sidebar or generic styles */
+      box-shadow: 10px 0 25px rgba(0,0,0,0.4) !important;
+      padding: 70px 0 20px 0 !important; 
+      transform: translateX(-110%);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+      display: block !important;
+      visibility: visible !important;
     }
 
-    /* Adjust the Close button inside sidebar to be more prominent */
-    #git-wiki-sidebar .w3-button.w3-large {
+    #git-wiki-sidebar.open {
+      transform: translateX(0);
+    }
+
+    /* Ensure internal lists have padding */
+    #git-wiki-sidebar > div {
+        padding: 0 20px !important;
+    }
+
+    /* Close button inside sidebar */
+    .sidebar-close-btn {
         text-align: right !important;
         width: 100% !important;
-        padding: 15px !important;
-        font-weight: bold !important;
+        padding: 15px 20px !important;
+        font-weight: 700 !important;
         color: var(--ctp-main-red) !important;
         background-color: var(--ctp-main-mantle) !important;
         border-bottom: 1px solid var(--ctp-main-surface1) !important;
-        /* Position it at the top */
         position: absolute !important;
         top: 0 !important;
         left: 0 !important;
-        z-index: 1003 !important;
+        display: block !important;
     }
 
     /* Main Layout - Push down */
@@ -691,7 +703,7 @@
       grid-template-columns: 1fr;
       margin-left: 0 !important;
       margin-top: 60px !important; /* Space for fixed header */
-      padding: 20px !important;
+      padding: 25px 20px !important;
       display: block !important;
     }
     
@@ -701,47 +713,62 @@
 
     /* Typography Scaling */
     h1 {
-      font-size: 28px !important;
-      margin-top: 0.5em !important;
-      line-height: 1.2 !important;
+      font-size: 32px !important;
+      margin-top: 0.2em !important;
+      line-height: 1.1 !important;
     }
     
     h2 {
-      font-size: 22px !important;
-      margin-top: 1.5em !important;
+      font-size: 24px !important;
+      margin-top: 1.2em !important;
     }
 
     h3 {
-      font-size: 18px !important;
+      font-size: 20px !important;
     }
 
     /* Footer */
     footer {
       margin-left: 0 !important;
       width: 100% !important;
-      padding: 30px 20px !important;
+      padding: 40px 20px !important;
+      border-top: 1px solid var(--ctp-main-surface1) !important;
     }
 
     /* Search & Tools */
     #search-input {
       width: 100% !important;
       font-size: 16px !important; /* Prevent zoom on iOS */
+      padding: 12px 20px !important;
     }
     
     .git-wiki-tools {
         justify-content: flex-start !important;
-        margin-top: 10px !important;
+        margin-top: 20px !important;
+        gap: 12px !important;
     }
     
     .tools-element a {
-        padding: 10px 15px !important; /* Larger touch targets */
+        padding: 12px 18px !important; 
+        font-size: 14px !important;
     }
     
+    /* TOC Card on Mobile */
+    #git-wiki-toc-container {
+        margin-top: 30px !important;
+    }
+
     /* Table scrolling */
     table {
         display: block !important;
         overflow-x: auto !important;
-        white-space: nowrap !important;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Backdrop styling */
+    .w3-overlay {
+        background-color: rgba(0,0,0,0.7) !important;
+        z-index: 1050 !important;
     }
   }
 </style>
