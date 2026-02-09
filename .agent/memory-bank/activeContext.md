@@ -12,6 +12,7 @@ The project has undergone a massive content update, synchronizing the wiki with 
   - Entities appearing in Sessions 1 & 2 are set to `published: true` to align with current blog posts.
   - Entities appearing in Sessions 3–10 are set to `published: false` to avoid spoilers for readers following the blog.
 - **Mobile UX/UI Optimization & Polish (2026-02-09):**
+  - Resolved excessive vertical spacing on mobile by zeroing out global body padding and tightening layout margins.
   - Implemented a smooth slide-in animation for the mobile sidebar.
   - Added a darkened backdrop (`w3-overlay`) to focus user attention when the menu is active.
   - Resolved sidebar transparency issues by removing aggressive universal CSS inheritance rules.
