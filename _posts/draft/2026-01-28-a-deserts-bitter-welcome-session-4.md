@@ -84,3 +84,18 @@ The banner of the Usurper’s Bane hung limp in the stagnant air of Ravens' Town
         * [Evett]({{ site.baseurl }}/Evett) E (Zombie): KIA. Met final death in the dunes.
 
   [The Usurper's Bane]({{ site.baseurl }}/The%20Usurper%27s%20Bane) reaches [Ras Karim]({{ site.baseurl }}/Ras%20Karim) with a shattered line. With the [Arena]({{ site.baseurl }}/Arena) looming, will the "indestructible" survivors find their end in the pits, or will a new source of power emerge from the southern heat?
+
+---
+
+<table border="0">
+  <tr>
+    <td>⏏️ Return to catalogue</td>
+    <td>|</td>
+    <td style="text-align: right;">➡️ Read next chatper</td>
+  </tr>
+  <tr>
+    <td>Campaign Jounrals</td>
+    <td>|</td>
+    <td style="text-align: right;">[Sun, Sand, and End of My Fodders Who Refuse to Die (Session 5)](2026-01-28-sun-sand-and-end-of-my-fodders-who-refuse-to-die-session-5.md)</td>
+  </tr>
+</table>

@@ -1,12 +1,12 @@
-
 import os
 import re
 import collections
+from pathlib import Path
 
 # Config
-LOG_DIR = r"d:\Git\BB-Usurper-CampaignWiki\.log"
-CHAR_DIR = r"d:\Git\BB-Usurper-CampaignWiki\wiki\characters"
-TEMPLATE_FILE = os.path.join(CHAR_DIR, "99 Bro Template.md")
+LOG_DIR = Path(".html-log")
+CHAR_DIR = Path("wiki/characters")
+TEMPLATE_FILE = CHAR_DIR / "99 Bro Template.md"
 
 JUNK_WORDS = {
     "character", "name", "units", "kills", "damage", "xp", "taken", "health", "injuries", "morale",
@@ -16,11 +16,10 @@ JUNK_WORDS = {
 
 def get_existing_characters():
     chars = set()
-    if os.path.exists(CHAR_DIR):
-        for f in os.listdir(CHAR_DIR):
-            if f.endswith(".md") and f != "99 Bro Template.md":
-                # Store full filename without extension
-                chars.add(f.replace(".md", ""))
+    if CHAR_DIR.exists():
+        for f in CHAR_DIR.iterdir():
+            if f.suffix == ".md" and f.name != "99 Bro Template.md":
+                chars.add(f.stem)
     return chars
 
 def extract_names_from_logs():
@@ -30,31 +29,37 @@ def extract_names_from_logs():
     
     table_row_re = re.compile(r"\|\s*([A-Za-z0-9\s'-]+?)\s*\|\s*\d+\s*\|")
     
+    if not LOG_DIR.exists():
+        print(f"Directory {LOG_DIR} does not exist.")
+        return candidates
+
     # Process files in order
-    files = sorted([f for f in os.listdir(LOG_DIR) if f.endswith(".md")], key=lambda x: extract_session_num(x))
+    files = sorted([f for f in LOG_DIR.iterdir() if f.suffix == ".md" and "session" in f.name], key=lambda x: extract_session_num(x.name))
     
-    for f in files:
-        session_num = extract_session_num(f)
-        path = os.path.join(LOG_DIR, f)
+    for f_path in files:
+        session_num = extract_session_num(f_path.name)
         
-        with open(path, 'r', encoding='utf-8') as file:
-            content = file.read()
-            matches = table_row_re.findall(content)
-            
-            for m in matches:
-                name = m.strip()
-                # Basic filter
-                if not name: continue
-                # Title casing
-                name_title = name.title()
+        try:
+            with open(f_path, 'r', encoding='utf-8') as file:
+                content = file.read()
+                matches = table_row_re.findall(content)
                 
-                # Check junk
-                first_word = name_title.split()[0].lower()
-                if first_word in JUNK_WORDS: continue
-                if any(c.isdigit() for c in name): continue # Skip "Level 11" etc if filtered poorly
-                
-                # Store with session num
-                candidates[name_title] = session_num
+                for m in matches:
+                    name = m.strip()
+                    # Basic filter
+                    if not name: continue
+                    # Title casing
+                    name_title = name.title()
+                    
+                    # Check junk
+                    first_word = name_title.split()[0].lower()
+                    if first_word in JUNK_WORDS: continue
+                    if any(c.isdigit() for c in name): continue # Skip "Level 11" etc if filtered poorly
+                    
+                    # Store with session num
+                    candidates[name_title] = session_num
+        except Exception as e:
+            print(f"Error reading {f_path}: {e}")
                 
     return candidates
 
@@ -67,9 +72,9 @@ def extract_session_num(filename):
 
 def create_character_file(name, template_content):
     filename = f"{name}.md"
-    path = os.path.join(CHAR_DIR, filename)
+    path = CHAR_DIR / filename
     
-    if os.path.exists(path):
+    if path.exists():
         print(f"Skipping {filename} (Exists)")
         return
     
@@ -84,8 +89,11 @@ def create_character_file(name, template_content):
         print(f"Error creating {filename}: {e}")
 
 def main():
-    print("Reading template...")
+    print(f"Reading template from {TEMPLATE_FILE}...")
     try:
+        if not TEMPLATE_FILE.exists():
+            print(f"Template not found: {TEMPLATE_FILE}")
+            return
         with open(TEMPLATE_FILE, 'r', encoding='utf-8') as f:
             template_content = f.read()
     except Exception as e:
@@ -97,6 +105,12 @@ def main():
     
     candidates_map = extract_names_from_logs()
     
+    if not candidates_map:
+        print("No candidates found in logs.")
+        # But we still might want to check the old .log folder if it exists?
+        # Actually, let's just stick to the new structure as requested.
+        return
+
     # Group candidates by First Word to handle deduplication and matching
     groups = collections.defaultdict(list) # first_word -> list of (name, session_num)
     
@@ -109,7 +123,6 @@ def main():
     for first_word, entries in groups.items():
         # 1. Check if ANY existing character matches this First Word group
         # Broad check: is "First Word" a prefix of any existing char? or contained?
-        # "NeCola" exists -> matches group "Necola" (Necola The Silver Sword)
         is_covered = False
         first_word_lower = first_word.lower()
         
@@ -120,8 +133,7 @@ def main():
                 is_covered = True
                 break
             if first_word_lower == "lady" and "lady" in ex: # Lady Amelia
-                is_covered = True # Wait, if Lady Amelia exists, we skip Lady Amelia A?
-                # Ideally yes.
+                is_covered = True
                 break
                 
         if is_covered:
@@ -129,8 +141,7 @@ def main():
             continue
             
         # 2. Select best candidate from group
-        # Prefer latest session, then longest name?
-        # Sort by Session Desc, then Length Desc
+        # Prefer latest session, then longest name
         entries.sort(key=lambda x: (x[1], len(x[0])), reverse=True)
         best_name = entries[0][0]
         
@@ -145,3 +156,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

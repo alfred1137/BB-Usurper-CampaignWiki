@@ -125,3 +125,17 @@ We reached the gates of [Raven Watch]({{ site.baseurl }}/Raven%20Watch) by Day 
 
 
 [Table omitted - see original]
+---
+
+<table border="0">
+  <tr>
+    <td>⏏️ Return to catalogue</td>
+    <td>|</td>
+    <td style="text-align: right;">➡️ Read next chatper</td>
+  </tr>
+  <tr>
+    <td>Campaign Jounrals</td>
+    <td>|</td>
+    <td style="text-align: right;">[A Desert’s Bitter Welcome (Session 4)](2026-01-28-a-deserts-bitter-welcome-session-4.md)</td>
+  </tr>
+</table>

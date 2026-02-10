@@ -46,6 +46,6 @@ Our path is dark, and the stakes are absolute: if I fall, the mandate fails. We 
   <tr>
     <td>Campaign Jounrals</td>
     <td>|</td>
-    <td style="text-align: right;">Session 1: Blood, Blessings, and the Rickroll Curse</td>
+    <td style="text-align: right;">[Session 1: Blood, Blessings, and the Rickroll Curse](2026-01-28-session-1-blood-blessings-and-the-rickroll-curse.md)</td>
   </tr>
 </table>

@@ -72,3 +72,18 @@ The heat of the Southern deserts is not like the chill of the North; it does not
 
 
     With the "Immortals" dead and our pockets full of Gilder gold, we stand at the heart of Southern faith in Makan Muqadas. The ambition is three-fifths complete, and the company is gaining serious notoriety in these lands. But as the dead rise in the dunes and the possessed wander the outskirts, I wonder: did the Raven allow my veterans to die to make room for something far more monstrous?
+
+---
+
+<table border="0">
+  <tr>
+    <td>⏏️ Return to catalogue</td>
+    <td>|</td>
+    <td style="text-align: right;">➡️ Read next chatper</td>
+  </tr>
+  <tr>
+    <td>Campaign Jounrals</td>
+    <td>|</td>
+    <td style="text-align: right;">[Gilded Pits and Forsaken's Toll (Session 6)](2026-01-28-gilded-pits-and-forsakens-toll-session-6.md)</td>
+  </tr>
+</table>

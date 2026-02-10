@@ -1,6 +1,8 @@
 import re
 import html
 import sys
+import os
+from pathlib import Path
 
 def clean_html(text):
     # Basic HTML to Markdown conversion
@@ -25,7 +27,7 @@ def process(filepath, output_path):
     
     output = []
     # Derive title from filename
-    filename = filepath.split('\\')[-1].split('/')[-1].replace('.html', '').replace('-', ' ').title()
+    filename = Path(filepath).stem.replace('-', ' ').title()
     output.append(f"# {filename}\n")
     
     for match in matches:
@@ -45,16 +47,33 @@ def process(filepath, output_path):
     
     print(f"Successfully converted messages to {output_path}")
 
+def get_latest_log():
+    log_dir = Path('.html-log')
+    if not log_dir.exists():
+        return None
+    
+    logs = list(log_dir.glob('*-log.html'))
+    if not logs:
+        return None
+        
+    # Sort by modification time to get the latest
+    return max(logs, key=os.path.getmtime)
+
 if __name__ == '__main__':
     if len(sys.argv) > 2:
         process(sys.argv[1], sys.argv[2])
     elif len(sys.argv) > 1:
         input_path = sys.argv[1]
-        output_path = input_path.rsplit('.', 1)[0] + '.md'
+        output_path = str(Path(input_path).with_suffix('.md'))
         process(input_path, output_path)
     else:
-        # Fallback to defaults if no args provided (optional, keeps old behavior if desired)
-        default_input = r'\\tangshome\home\Drive\99 Shared\Games\Battle Brothers\RotU+PoV-Campaign\Story\Log\session-2-log.html'
-        default_output = default_input.replace('.html', '.md')
-        process(default_input, default_output)
+        latest = get_latest_log()
+        if latest:
+            output_path = str(latest.with_suffix('.md'))
+            print(f"No arguments provided. Processing latest log: {latest}")
+            process(str(latest), output_path)
+        else:
+            print("Usage: python scripts/convert_log.py [input_html] [output_md]")
+            print("No log files found in .html-log/")
+
 

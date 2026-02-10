@@ -62,6 +62,7 @@ site_root:
 exclude:
   - .agent
   - .log
+  - .html-log
   - .gitlab-ci.yml
   - docker-compose.yml
   - .env-files
