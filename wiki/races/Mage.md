@@ -1,12 +1,12 @@
 ---
-title: "Mage"
+title: "Abysall Mage"
 layout: git-wiki-default
 category: [Races]({{ site.baseurl }}/Races)
 subcategory: Special Class
 published: true
 ---
 
-Mages are individuals who have unlocked the ability to manipulate the fundamental energies of the world. In the Usurper's Bane campaign, these powers often stem from the Abyss.
+Mages are generally individuals who have unlocked the ability to manipulate the fundamental energies of the world. In the Usurper's Bane campaign, **Abyssal Mage** is a special class of mage empowered by [The Great Raven]({{ site.baseurl }}/Changer)
 
 ## Abyssal Magic
 
