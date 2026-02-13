@@ -5,14 +5,18 @@ published: true
 permalink: /CampaignJournals/
 ---
 
-The Journal of the commandor of the Usurper's Bane mercenary company. Here you can find all session reports, story prologues, and chronicles of our journey through the tainted lands.
+## Campaign Journals
+
+The Journal of the commander of the Usurper's Bane mercenary company. Here you can find all session reports, story prologues, and chronicles of our journey through the tainted lands.
+
+## Journal Entries
 
 <table id="journal-table" class="w3-table w3-bordered w3-hoverable sortable-table">
   <thead>
     <tr class="w3-light-grey">
-      <th style="cursor: pointer; width: 120px;">Date ↕</th>
+      <th style="cursor: pointer; width: 60px;">S/N ↕</th>
       <th style="cursor: pointer;">Title ↕</th>
-      <th style="cursor: pointer; width: 100px;">Type ↕</th>
+      <th style="cursor: pointer; width: 120px;">Date ↕</th>
     </tr>
   </thead>
   <tbody>
@@ -20,13 +24,9 @@ The Journal of the commandor of the Usurper's Bane mercenary company. Here you c
     {% for post in sorted_posts %}
       {% if post.title != "Campaign Journals" %}
       <tr>
-        <td>{{ post.date | date: "%Y-%m-%d" }}</td>
+        <td>{{ forloop.index }}</td>
         <td><a href="{{ post.url | relative_url }}">{{ post.title }}</a></td>
-        <td>
-          {% if post.type %}
-            <span style="font-size: 11px; background-color: var(--ctp-main-surface1); padding: 2px 6px; border-radius: 4px; color: var(--ctp-main-subtext0);">{{ post.type }}</span>
-          {% endif %}
-        </td>
+        <td>{{ post.date | date: "%Y-%m-%d" }}</td>
       </tr>
       {% endif %}
     {% endfor %}
@@ -50,9 +50,9 @@ document.querySelectorAll('.sortable-table th').forEach(header => {
       const aText = a.children[index].textContent.trim();
       const bText = b.children[index].textContent.trim();
       
-      // Numerical comparison for dates if first column
+      // Numerical comparison for S/N if first column
       if (index === 0) {
-        return isAscending ? (aText < bText ? 1 : -1) : (aText > bText ? 1 : -1);
+        return isAscending ? bText - aText : aText - bText;
       }
       
       return isAscending ? bText.localeCompare(aText) : aText.localeCompare(bText);
