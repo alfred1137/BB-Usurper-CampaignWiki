@@ -5,7 +5,7 @@ published: true
 permalink: /CampaignJournals/
 ---
 
-## Campaign Journals
+## Introduction
 
 The Journal of the commander of the Usurper's Bane mercenary company. Here you can find all session reports, story prologues, and chronicles of our journey through the tainted lands.
 
