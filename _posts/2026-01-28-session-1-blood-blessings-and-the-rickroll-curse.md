@@ -99,11 +99,17 @@ As Day 2 drew to a close, we sat by the fire, the Unhold’s Heart thumping in m
   <tr>
     <td>⏏️ Return to catalogue</td>
     <td>|</td>
-    <td style="text-align: right;">➡️ Read next chatper</td>
+    <td style="text-align: right;">➡️ Read next chapter</td>
   </tr>
   <tr>
-    <td>Campaign Jounrals</td>
+    <td><a href="{{ '/CampaignJournals/' | relative_url }}">Campaign Journals</a></td>
     <td>|</td>
-    <td style="text-align: right;">[Session 2: Of Tombs and Tainted Crowns](2026-01-29-session-2-of-tombs-and-tainted-crowns.md)</td>
+    <td style="text-align: right;">
+      {% if page.next and page.next.published != false %}
+        <a href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a>
+      {% else %}
+        Coming soon...
+      {% endif %}
+    </td>
   </tr>
 </table>

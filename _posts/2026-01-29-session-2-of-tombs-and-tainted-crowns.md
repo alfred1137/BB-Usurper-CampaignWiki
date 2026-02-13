@@ -69,7 +69,7 @@ Amidst the carnage stood Arnulf, whose previous horrific ascension into a zombif
 
 ## The shroud of Raven Town
 
-The sun sets on Day 5, and the "Usurper’s Bane" is a name that now carries a weight of dread. We have nearly three thousand crowns and a roster of souls that defy the natural order. [NeCola]({{ site.baseurl }}/NeCola) is finally finding her strength. But the Raven whispers of bigger shadows. Giselher’s "ancient crowns" are disappearing with alarming frequency, and the "Possessed" are starting to scent the air.
+The sun sets on Day 5. We have nearly three thousand crowns and a roster of souls that defy the natural order. [NeCola]({{ site.baseurl }}/NeCola) is finally finding her strength. But the Raven whispers of bigger shadows. Giselher’s "ancient crowns" are disappearing with alarming frequency, and the "Possessed" are starting to scent the air.
 
 We march toward [Raven Watch]({{ site.baseurl }}/Raven%20Watch) next, to find those "worthy" of our journey. [The Usurper King]({{ site.baseurl }}/The%20Usurper%20King) thinks he is the master of the dead, and I have only some [fodders]({{ site.baseurl }}/fodders) and a zombie who refuses to die besides a [Vatt'ghern]({{ site.baseurl }}/Vatt%27ghern) who is learning to hunt the very demons he commands.
 
@@ -81,11 +81,17 @@ We needed more capable fighters.
   <tr>
     <td>⏏️ Return to catalogue</td>
     <td>|</td>
-    <td style="text-align: right;">➡️ Read next chatper</td>
+    <td style="text-align: right;">➡️ Read next chapter</td>
   </tr>
   <tr>
-    <td>Campaign Jounrals</td>
+    <td><a href="{{ '/CampaignJournals/' | relative_url }}">Campaign Journals</a></td>
     <td>|</td>
-    <td style="text-align: right;">Coming soon...</td>
+    <td style="text-align: right;">
+      {% if page.next and page.next.published != false %}
+        <a href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a>
+      {% else %}
+        Coming soon...
+      {% endif %}
+    </td>
   </tr>
 </table>

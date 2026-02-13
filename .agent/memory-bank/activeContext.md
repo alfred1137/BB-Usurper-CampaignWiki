@@ -22,6 +22,10 @@ The project has undergone a massive content update, synchronizing the wiki with 
   - Executed `scripts/apply_links.py` across the entire codebase.
   - Generated **255 internal links** using the `{{ site.baseurl }}/Basename` format.
   - Verified that all characters, locations, quests, and races are correctly interconnected.
+- **Navigation Standardization:**
+  - Updated `scripts/update_post_nav.py` to enforce a dynamic Liquid navigation table across all session posts.
+  - The new template uses `page.next` to automatically link to the next chronological post, handling `published: false` states gracefully ("Coming soon...").
+  - Updated the session journal template to match this new standard.
 - **Workflow Verification:**
   - Reviewed and confirmed `.agent/workflows/scan-wiki-links.md` is compatible with the current Jekyll structure.
 - **Git Synchronization:**

@@ -1,26 +1,26 @@
 ---
-description: Update navigation links between campaign journal entries chronologically.
+description: Standardize navigation links in campaign journal entries using Liquid templates.
 ---
 
-This workflow synchronizes the "Read next chapter" links at the bottom of each campaign journal post (including drafts). It ensures readers can navigate through the story in chronological order.
+This workflow standardizes the "Read next chapter" navigation table at the bottom of each campaign journal post. It replaces static links with dynamic Liquid filters (`page.next`) to ensure the navigation automatically updates based on the chronological order of posts.
 
 ### Steps
 
 1. **Prerequisites**
-   - Ensure new posts follow the naming convention `YYYY-MM-DD-session-X-...md`.
    - Ensure the `scripts/update_post_nav.py` script exists.
+   - Ensure the `_posts` directory contains the target markdown files.
 
 // turbo
 2. **Execute Update Script**
-   Run the navigation update script from the root directory:
+   Run the navigation standardization script from the root directory:
    ```powershell
    python scripts/update_post_nav.py
    ```
 
 ### Verification
-- Check the bottom of the modified files to ensure the `NEXT` or previous link has been replaced with the title of the next chronological session.
-- Ensure that the last post in the sequence is either left as "Coming soon..." or handled appropriately.
+- Check the bottom of the modified files to ensure the static table has been replaced with the Liquid code block.
+- Verify that the Liquid code correctly renders the "Next" link or "Coming soon..." message when the site is built.
+- **Note:** Since `page.next` relies on Jekyll's date sorting, ensure that posts on the same day have appropriate timestamps or naming to preserve order.
 
 ### Troubleshooting
-- If a post isn't being linked, check if its session number can be parsed from the filename or the frontmatter title.
-- If links are broken, verify the relative paths between the `_posts` and `_posts/draft` directories.
+- If the table is not updated, check if the regex in the script matches the existing table format (e.g., check for typos in "Journals" or "Chapter").

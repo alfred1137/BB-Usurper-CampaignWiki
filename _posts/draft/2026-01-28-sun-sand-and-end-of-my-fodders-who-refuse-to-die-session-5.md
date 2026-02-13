@@ -79,11 +79,17 @@ The heat of the Southern deserts is not like the chill of the North; it does not
   <tr>
     <td>⏏️ Return to catalogue</td>
     <td>|</td>
-    <td style="text-align: right;">➡️ Read next chatper</td>
+    <td style="text-align: right;">➡️ Read next chapter</td>
   </tr>
   <tr>
-    <td>Campaign Jounrals</td>
+    <td><a href="{{ '/CampaignJournals/' | relative_url }}">Campaign Journals</a></td>
     <td>|</td>
-    <td style="text-align: right;">[Gilded Pits and Forsaken's Toll (Session 6)](2026-01-28-gilded-pits-and-forsakens-toll-session-6.md)</td>
+    <td style="text-align: right;">
+      {% if page.next and page.next.published != false %}
+        <a href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a>
+      {% else %}
+        Coming soon...
+      {% endif %}
+    </td>
   </tr>
 </table>
